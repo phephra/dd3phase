@@ -362,7 +362,7 @@ a {
     font-size: 1.3rem;
     display: block;
     position: relative;
-    margin-top: 36vh;
+    margin-top: 30vh;
     text-transform: uppercase;
     padding-bottom: 0;
 }
@@ -430,23 +430,6 @@ a {
     padding-right: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
-}
-
-.contenuto_overlay_2 {
-    position: absolute;
-    width: 50vw;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 15vh;
-    bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 21;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     align-content: center;
 }
 
@@ -507,7 +490,10 @@ a {
 }
 
 .scenario-viz {
-    width: 80%;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text-container {
@@ -593,7 +579,7 @@ a {
     margin-top: 1rem;
     margin-bottom: 0rem;
     text-decoration: none;
-    min-width: 7vw;
+    min-width: 8vw;
     background-color: transparent;
     color: white;
     border: 2px solid white;
@@ -604,6 +590,31 @@ a {
     background-color: #000000;
     color: white;
     transition: background-color 0.2s linear;
+}
+
+.btn-2 {
+    display: block;
+    font-size: 1rem;
+    font-family: "IBM Plex Sans Medium", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    min-width: 7vw;
+    background-color: transparent;
+    color: grey;
+    border: transparent;
+}
+
+.btn-2:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease-in-out;
 }
 
 .btn-3 {
