@@ -424,6 +424,7 @@ a {
     bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
     z-index: 21;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -737,6 +738,8 @@ a {
     padding-right: 2.5rem;
     opacity: 0;
     transition: 0.8s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #map-title {
@@ -762,7 +765,7 @@ a {
     left: 0;
     right: 0;
     padding-bottom: 4vh;
-    padding-top: 2vh;
+    padding-top: 4vh;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -841,18 +844,18 @@ a {
 #location-name {
     position: relative;
     display: block;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: "IBM Plex Sans Medium", serif;
     margin-top: 0rem;
     margin-bottom: 0rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
 }
 
 #topic-name {
     position: relative;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "IBM Plex Serif Bold", serif;
     margin-top: 0rem;
 }
@@ -989,7 +992,7 @@ a {
     font-size: 0.9rem;
     line-height: 1.4rem;
     border-radius: 0px;
-    max-width: 20vw;
+    max-width: 22vw;
     height: auto;
     font-family: "IBM Plex Sans Regular", serif;
     padding-left: 0.5rem;

@@ -578,11 +578,11 @@ var marker_altamira3 = L.marker(altamira3, {
 
 var marker_diga = L.marker(diga, {
     icon: icona_diga
-}).addTo(map).bindPopup('<p class="titolo_popup">UHE Belo Monte</p><p>Belo Monte is one of the hydroelectric giants in the complex built by Norte Energia on the Xingu River.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">UHE Belo Monte, Main Site</p><p>Belo Monte is the main powerhouse of the hydroelectric complex built by Norte Energia on the Xingu River. </p><p class="hint">Click to inspect</p>', customOptions);
 
 var marker_diga2 = L.marker(diga2, {
     icon: icona_diga2
-}).addTo(map).bindPopup('<p class="titolo_popup">UHE Belo Monte</p><p>Belo Monte is one of the hydroelectric giants in the complex built by Norte Energia on the Xingu River.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">UHE Belo Monte, Pimental Site</p><p>The Pimental Site is the auxiliary powerhouse of the complex built by Norte Energia on the Xingu River.</p><p class="hint">Click to inspect</p>', customOptions);
 
 var marker_ambiente = L.marker(ambiente, {
     icon: icona_ambiente
@@ -744,6 +744,8 @@ marker_ambiente2.on('click', function (e) {
 //SIDEBAR
 
 var navState;
+var current_marker;
+var nome_icona_now;
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "30vw";
@@ -769,6 +771,9 @@ function closeNav() {
     document.getElementsByClassName("right")[0].style.display = "none";
     document.getElementsByClassName("statement")[0].style.opacity = "0";
     document.getElementsByClassName("statement")[1].style.opacity = "0";
+    current_marker = window["marker_" + switchIcona];
+    nome_icona_now = window["icona_" + switchIcona + "_I"];
+    current_marker.setIcon(nome_icona_now);
 };
 
 //CAMBIARE ICONE
@@ -781,12 +786,14 @@ function cambiaIcone() {
         var nome_icona_I = window["icona_" + vecchia_icona + "_I"];
         vecchio_marker.setIcon(nome_icona_I);
     };
-    var current_marker = window["marker_" + switchIcona];
-    var nome_icona_now = window["icona_" + switchIcona + "_now"];
-    current_marker.setIcon(nome_icona_now);
-    vecchia_icona = switchIcona;
-    vecchio_marker = current_marker;
-    it_happened = true;
+    current_marker = window["marker_" + switchIcona];
+    nome_icona_now = window["icona_" + switchIcona + "_now"];
+    if (navState){
+        current_marker.setIcon(nome_icona_now);
+        vecchia_icona = switchIcona;
+        vecchio_marker = current_marker;
+        it_happened = true;
+    }
 }
 
 //CONTENUTO
@@ -825,7 +832,7 @@ function contaLetture() {
         document.getElementById("hai_finito").style.display = "none";
 
         document.getElementById("title_overlay2").innerHTML = "Are you sure?";
-        document.getElementById("text_overlay2").innerHTML = "You haven't checked all the problems of the dam, do you still want to take a decision?";
+        document.getElementById("text_overlay2").innerHTML = "You haven't inspected all the impacts of the dam yet, do you still want to take a decision?";
         document.getElementsByClassName("btn-1")[1].style.display = "none";
         document.getElementsByClassName("btn-1")[2].style.display = "none";
         document.getElementsByClassName("btn-3")[0].style.display = "block";
@@ -965,7 +972,7 @@ function indietro() {
     map.closePopup();
 };
 
-var loco = '<i class="fas fa-map-marker-alt" style="font-size:1.2rem;color:#ffffff;"></i>'
+var loco = '<i class="fas fa-map-marker-alt" style="font-size:0.8rem;color:#ffffff;"></i>'
 
 function unveilStatements(switchIcona) {
     switch (switchIcona) {
@@ -985,7 +992,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte built a modern system of sewage collection and treatment, with more than 200 km of network, and expanded the water supply system." ';
             document.getElementById("location-name").innerHTML = loco + ' Altamira ';
-            document.getElementById("topic-name").innerHTML = ' Sewage and Water Supply ';
+            document.getElementById("topic-name").innerHTML = ' Sewage and water supply ';
             break;
         case "altamira3":
             console.log(switchIcona);
@@ -1003,7 +1010,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "60 million people are going to be reached." ';
             document.getElementById("location-name").innerHTML = loco + ' Belo Monte Dam, Main Site ';
-            document.getElementById("topic-name").innerHTML = ' Energy Production ';
+            document.getElementById("topic-name").innerHTML = ' Energy production ';
             break;
         case "diga2":
             console.log(switchIcona);
@@ -1021,7 +1028,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "More than 395 thousand wild animals were rescued. Healthy animals (92%) were returned to the natural habitat, while the rest were sent to scientific institutions or breeding grounds for conservation purposes. " ';
             document.getElementById("location-name").innerHTML = loco + ' Big Bend of the Xingu ';
-            document.getElementById("topic-name").innerHTML = ' Impacts on Fauna ';
+            document.getElementById("topic-name").innerHTML = ' Impacts on fauna ';
             break;
         case "ambiente2":
             console.log(switchIcona);
@@ -1030,7 +1037,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The environmental conditions around Volta Grande are kept stable by a "hydrograph of consensus" - a model that establishes the minimum river flow rate to keep the area environmentally healthy." ';
             document.getElementById("location-name").innerHTML = loco + ' Big Bend of the Xingu ';
-            document.getElementById("topic-name").innerHTML = ' River Flow ';
+            document.getElementById("topic-name").innerHTML = ' River flow ';
             break;
         case "indios":
             console.log(switchIcona);
@@ -1048,7 +1055,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The indigenous communities actively participate in the discussions to define the actions that will be carried out in their territories. " ';
             document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
-            document.getElementById("topic-name").innerHTML = ' Cooperation with Local Communities ';
+            document.getElementById("topic-name").innerHTML = ' Cooperation with local communities ';
             break;
         case "indios3":
             console.log(switchIcona);
@@ -1057,7 +1064,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The Basic Indigenous Environmental Component Project has been guaranteeing fundamental rights, promoting the quality of life and integrity of some 4,000 indigenous people." ';
             document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
-            document.getElementById("topic-name").innerHTML = ' Human Rights ';
+            document.getElementById("topic-name").innerHTML = ' Human rights ';
             break;
         default:
             console.log("Non sto andando");
@@ -1079,7 +1086,7 @@ function unveilVersions(switchIcona) {
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Over the past year, Norte Energia´s license has been suspended because of its failure to fulfill the building of an adequate sewer and water system for the city of Altamira." ';
             break;
         case "altamira3":
-            document.getElementsByClassName("actor-icon")[1].src = "/assets/img/icona_ministerio.png";
+            document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_ministerio.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Ministério Público Federal";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Brazilian Ministry";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The houses proposed by Norte Energia violated the Altamira municipality Construction Code. " ';
