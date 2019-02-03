@@ -592,6 +592,11 @@ a {
     transition: background-color 0.2s linear;
 }
 
+.btn-1:focus {
+    cursor: pointer;
+    outline: none;
+}
+
 .btn-2 {
     display: block;
     font-size: 1rem;
@@ -615,6 +620,12 @@ a {
     cursor: pointer;
     color: white;
     transition: color 0.3s ease-in-out;
+}
+
+.btn-2:focus {
+    cursor: pointer;
+    border: transparent;
+    outline: none;
 }
 
 .btn-3 {
@@ -646,6 +657,11 @@ a {
     background-color: #000000;
     color: white;
     transition: background-color 0.2s linear;
+}
+
+.btn-3:focus {
+    cursor: pointer;
+    outline: none;
 }
 
 
