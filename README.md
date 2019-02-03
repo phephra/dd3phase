@@ -1,2 +1,2 @@
 # dd3phase
-la serie evento
+il sito evento
