@@ -128,12 +128,17 @@ var fadeout_tween_xingu = TweenMax.to('#xingu_map', 0.4, {
 
 
 //INITALIZE SCROLLMAGIC
-var controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller({
+    globalSceneOptions: { // options for every scene
+        reverse: true,
+        triggerHook: 'onLeave'
+        },
+        addIndicators: true
+});
 
 // build scene 01  LANDING goes up and...
 new ScrollMagic.Scene({
         triggerElement: "#landing",
-        triggerHook: "onLeave",
         duration: 600,
         offset: 0
     })
@@ -143,13 +148,11 @@ new ScrollMagic.Scene({
         autoAlpha: 0,
         ease: Linear.easeNone
     })
-    .addIndicators()
     .addTo(controller);
 
 // build scene 02  Scene 01 blendet aus
 new ScrollMagic.Scene({
         triggerElement: "#landing",
-        triggerHook: "onLeave",
         offset: 200,
         duration: 0
     })
@@ -157,13 +160,11 @@ new ScrollMagic.Scene({
     .setTween("#landing", {
         autoAlpha: 0
     })
-    .addIndicators()
     .addTo(controller);
 
 // build scene 03  Introduzione
 new ScrollMagic.Scene({
         triggerElement: "#world-map-text",
-        triggerHook: "onLeave",
         duration: 200
     })
     .setPin("#landing")
@@ -171,15 +172,12 @@ new ScrollMagic.Scene({
         y: -500,
         ease: Linear.easeNone
     })
-    .addIndicators()
     .addTo(controller);
 
 // build scene 04 - map appears
 new ScrollMagic.Scene({
         triggerElement: '#world-map-text',
-        triggerHook: "onLeave",
-        reverse: true,
-        duration: 500,
+        duration: 300,
     })
     .setPin("#landing")
     .setTween(fadein_tween_brazil)
@@ -188,30 +186,22 @@ new ScrollMagic.Scene({
 // build scene 05 - pinna brasile
 new ScrollMagic.Scene({
         triggerElement: "#world-map-text",
-        triggerHook: "onLeave",
-        reverse: true,
-        duration: 3000
+        duration: '200%'
     })
     .setPin("#brazil_map")
-    .addIndicators()
     .addTo(controller);
 
-// build scene 5.5 - pinna belomonte intro
+// build scene 06 - pinna belomonte intro
 new ScrollMagic.Scene({
         triggerElement: "#world-map-text",
-        triggerHook: "onLeave",
-        reverse: true,
-        duration: 3000
+        duration: 3500
     })
     .setPin("#belomonte_intro")
-    .addIndicators()
     .addTo(controller);
 
-// build scene 06 - overlay appears
+// build scene 07 - overlay appears
 new ScrollMagic.Scene({
         triggerElement: '#world-map-text',
-        triggerHook: "onLeave",
-        reverse: true,
         duration: 500,
         offset: 600
     })
@@ -219,18 +209,15 @@ new ScrollMagic.Scene({
     .setTween(fadein_tween_river)
     .addTo(controller);
 
-// build scene 07 - pinna overlay
+// build scene 08 - pinna overlay
 new ScrollMagic.Scene({
         triggerElement: "#world-map-text",
-        triggerHook: "onLeave",
-        reverse: true,
         duration: 3000
     })
     .setPin("#river_map")
-    .addIndicators()
     .addTo(controller);
 
-// build scene 08 - muovi testo
+// build scene 09 - muovi testo
 new ScrollMagic.Scene({
         triggerElement: "river_map",
         duration: 200,
@@ -241,60 +228,51 @@ new ScrollMagic.Scene({
         y: 0,
         ease: Linear.easeNone
     })
-    .addIndicators()
     .addTo(controller);
 
-// build scene 09 - muovi testo
+// build scene 10 - muovi testo
 new ScrollMagic.Scene({
         triggerElement: "river_map",
         duration: 200,
         offset: 1000
     })
     .setPin("#landing")
-    .setTween("#xingu-map-text", {
+    .setTween("#brazil-map-text", {
         y: 0,
         ease: Linear.easeNone
     })
-    .addIndicators()
     .addTo(controller);
 
-//build scene 10 - Appare belomonte intro
+//build scene 11 - Appare belomonte intro
 new ScrollMagic.Scene({
         triggerElement: '#brazil-map-text',
-        triggerHook: "onLeave",
-        reverse: true,
-        duration: 500
+        offset: 100,
+        duration: 200
     })
     .setPin("#landing")
     .setTween(fadein_tween_belomonte)
     .addTo(controller);
 
-
-
-//build scene 11 - Appare XINGU_MAP_vera
+//build scene 12 - Appare XINGU_MAP
 new ScrollMagic.Scene({
-        triggerElement: '#river_map',
-        triggerHook: "onLeave",
-        offset: 350,
-        reverse: true,
-        duration: 300
+        triggerElement: '#brazil-map-text',
+        offset: 1000,
+        duration: 200
     })
     .setPin("#landing")
     .setTween(fadein_tween_xingu)
     .addTo(controller);
 
-// build scene 12 - pinna mappa
+// build scene 13 - pinna mappa
 new ScrollMagic.Scene({
-        triggerElement: "#river_map",
-        triggerHook: "onLeave",
-        duration: 4500
+        triggerElement: "#brazil-map-text",
+        duration: 4000
     })
     .setPin("#xingu_map")
     .setTween("river_map", {
         autoAlpha: 0,
         ease: Linear.easeNone
     })
-    .addIndicators()
     .addTo(controller);
 
 
@@ -345,10 +323,14 @@ map.setMaxZoom(2);
 var popupAnchorX = 200;
 var popupAnchorY = 0;
 
-var iconAnchorX = 0;
-var iconAnchorY = 36;
+var iconAnchorX = 30;
+var iconAnchorY = 30;
 
-var iconScale = 36;
+var iconAnchorXBig = 40;
+var iconAnchorYBig = 40;
+
+var iconScale = 60;
+var iconScaleBig = 80;
 
 var icona_altamira = L.icon({
     iconUrl: '/assets/icons/icona_altamira.png',
@@ -366,8 +348,8 @@ var icona_altamira_I = L.icon({
 
 var icona_altamira_now = L.icon({
     iconUrl: '/assets/icons/icona_altamira_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
@@ -387,8 +369,8 @@ var icona_altamira2_I = L.icon({
 
 var icona_altamira2_now = L.icon({
     iconUrl: '/assets/icons/icona_altamira_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
@@ -408,15 +390,8 @@ var icona_altamira3_I = L.icon({
 
 var icona_altamira3_now = L.icon({
     iconUrl: '/assets/icons/icona_altamira_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
-});
-
-var icona_altamira_Big = L.icon({
-    iconUrl: '/assets/icons/icona_altamira.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
@@ -436,8 +411,8 @@ var icona_diga_I = L.icon({
 
 var icona_diga_now = L.icon({
     iconUrl: '/assets/icons/icona_diga_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
@@ -457,15 +432,8 @@ var icona_diga2_I = L.icon({
 
 var icona_diga2_now = L.icon({
     iconUrl: '/assets/icons/icona_diga_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
-});
-
-var icona_diga_Big = L.icon({
-    iconUrl: '/assets/icons/icona_diga.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
@@ -499,22 +467,15 @@ var icona_ambiente2_I = L.icon({
 
 var icona_ambiente_now = L.icon({
     iconUrl: '/assets/icons/icona_ambiente_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
 var icona_ambiente2_now = L.icon({
     iconUrl: '/assets/icons/icona_ambiente_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
-});
-
-var icona_ambiente_Big = L.icon({
-    iconUrl: '/assets/icons/icona_ambiente.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
@@ -562,29 +523,22 @@ var icona_indios3_I = L.icon({
 
 var icona_indios_now = L.icon({
     iconUrl: '/assets/icons/icona_indios_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
 var icona_indios2_now = L.icon({
     iconUrl: '/assets/icons/icona_indios_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
 var icona_indios3_now = L.icon({
     iconUrl: '/assets/icons/icona_indios_now.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
-});
-
-var icona_indios_Big = L.icon({
-    iconUrl: '/assets/icons/icona_indios.png',
-    iconSize: 50,
-    iconAnchor: [iconAnchorX, iconAnchorY],
+    iconSize: [iconScaleBig],
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
     popupAnchor: [popupAnchorX, popupAnchorY]
 });
 
@@ -597,20 +551,19 @@ var customOptions = {
 }
 
 //MARKERS
-var altamira = L.latLng([480, 370]);
-var altamira2 = L.latLng([530, 420]);
-var altamira3 = L.latLng([450, 450]);
-var diga = L.latLng([580, 770]);
-var diga2 = L.latLng([260, 600]);
-var ambiente = L.latLng([450, 870]);
-var ambiente2 = L.latLng([360, 830]);
-var indios = L.latLng([140, 825]);
-var indios2 = L.latLng([250, 730]);
-var indios3 = L.latLng([120, 920]);
+var altamira = L.latLng([(boundH/4)*2.62, (boundW/12)*3.1]);
+var altamira2 = L.latLng([(boundH/4)*2.4, (boundW/12)*2.93]);
+var altamira3 = L.latLng([(boundH/4)*2.3, (boundW/12)*2.50]);
+var diga = L.latLng([(boundH/4)*2.97, (boundW/12)*6.42]);
+var diga2 = L.latLng([(boundH/4)*1.4, (boundW/12)*5]);
+var ambiente = L.latLng([(boundH/4)*1.4, (boundW/12)*6.9]);
+var ambiente2 = L.latLng([(boundH/4)*2, (boundW/12)*7]);
+var indios = L.latLng([(boundH/4)*1.26, (boundW/12)*6.1]);
+var indios2 = L.latLng([(boundH/4)*0.89, (boundW/12)*6.75]);
+var indios3 = L.latLng([(boundH/4)*0.6, (boundW/12)*7.2]);
 
 var marker_altamira = L.marker(altamira, {
     icon: icona_altamira,
-    stroke: 2
 }).addTo(map).bindPopup('<p class="titolo_popup">Altamira</p><p>Altamira is one of one hundred and forty-four municipalities in the state of Pará, in northern Brazil.</p><p class="hint">Click to inspect</p>', customOptions);
 
 
@@ -1126,7 +1079,7 @@ function unveilVersions(switchIcona) {
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Over the past year, Norte Energia´s license has been suspended because of its failure to fulfill the building of an adequate sewer and water system for the city of Altamira." ';
             break;
         case "altamira3":
-            document.getElementsByClassName("actor-icon")[1].src = "/assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[1].src = "/assets/img/icona_ministerio.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Ministério Público Federal";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Brazilian Ministry";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The houses proposed by Norte Energia violated the Altamira municipality Construction Code. " ';
@@ -1171,7 +1124,7 @@ function unveilVersions(switchIcona) {
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_ministerio.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Ministério Público Federal";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Brazilian Ministry";
-            document.getElementsByClassName("statement-text")[1].innerHTML = ' "Norte Energia violated 55 different oobligations it had agreed to in order to guarantee the survival of indigenous groups, farmers and fishermen whose homes and lands will be lost." ';
+            document.getElementsByClassName("statement-text")[1].innerHTML = ' "Norte Energia violated 55 different obligations it had agreed to in order to guarantee the survival of indigenous groups, farmers and fishermen whose homes and lands will be lost." ';
             break;
         default:
     }

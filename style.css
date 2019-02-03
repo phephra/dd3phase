@@ -182,6 +182,7 @@ a {
     background-image: url("/assets/img/diga_posterizzata.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     z-index: 2;
 }
@@ -223,6 +224,7 @@ a {
     background-image: url("Brazil_map.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: absolute;
     top: 100%;
     left: 0;
@@ -235,6 +237,7 @@ a {
     background-image: url("amazon_river.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: absolute;
     top: 100%;
     left: 0;
@@ -265,14 +268,14 @@ a {
     top: 260%;
     height: auto;
     z-index: 16;
-    left: 2vw;
+    right: 2vw;
 }
 
 #xingu_map {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 100%;
+    top: 260%;
     left: 0;
     z-index: 19;
 }
@@ -289,7 +292,6 @@ a {
 #outcome {
     width: 100%;
     height: 100%;
-    background-color: black;
 }
 
 .outcome-container {
@@ -703,7 +705,7 @@ a {
 /* SIDENAV STYLES */
 
 .sidenav {
-    height: 100vh;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -718,13 +720,13 @@ a {
 }
 
 #norte-statement-container {
-    height: 50vh;
+    height: 50%;
     background-color: #000000;
     position: relative;
 }
 
 #other-statement-container {
-    height: 50vh;
+    height: 50%;
     background-color: #ffffff;
     position: relative;
 }
@@ -891,6 +893,9 @@ a {
     font-family: "IBM Plex Sans Regular", sans-serif;
     color: #b3b3b3;
     margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
 }
 
 .statement-text {
@@ -991,6 +996,7 @@ a {
     padding-right: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    z-index: 33;
 }
 
 .custom-popup .leaflet-popup-content-wrapper a {

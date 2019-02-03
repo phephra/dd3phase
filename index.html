@@ -17,7 +17,7 @@
     </a>
     <div id="nav" class="menuSidenav">
         <div class="menu-links white center">
-            <a href="intro2.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="#">About</a>
             <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank">View the research</a>
         </div>
@@ -105,6 +105,15 @@
                 <button type="button" onclick="areYouSure('avanti')" class="btn-3">Yes, proceed</button>
             </div>
         </div>
+        <div id="mapid"></div>
+        <div id="map-title" class="center">
+            <p id="location-name" class="white">Xingu River Valley</p>
+            <p id="topic-name" class="white"></p>
+        </div>
+        <span class="left" onclick="indietro()"></span>
+        <span class="right" onclick="avanti()"></span>
+        <div id="map-legenda"></div>
+        <button id="hai_finito" type="button" class="btn-1" onclick="contaLetture()">Proceed to decision</button>
         <div id="mySidenav" class="sidenav">
             <div id="norte-statement-container" class="center">
                 <a href="javascript:void(0)" id="closebtn" onclick="closeNav(), resetMappa()">&times;</a>
@@ -124,15 +133,6 @@
                 </div>
             </div>
         </div>
-        <div id="mapid"></div>
-        <div id="map-title" class="center">
-            <p id="location-name" class="white">Xingu River Valley</p>
-            <p id="topic-name" class="white"></p>
-        </div>
-        <span class="left" onclick="indietro()"></span>
-        <span class="right" onclick="avanti()"></span>
-        <div id="map-legenda"></div>
-        <button id="hai_finito" type="button" class="btn-1" onclick="contaLetture()">Proceed to decision</button>
     </div>
 
 </body>
