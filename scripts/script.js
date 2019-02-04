@@ -407,14 +407,14 @@ var icona_diga_I = L.icon({
     iconUrl: '/assets/icons/icona_diga_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    popupAnchor: [popupAnchorX, popupAnchorY_basso]
 });
 
 var icona_diga_now = L.icon({
     iconUrl: '/assets/icons/icona_diga_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    popupAnchor: [popupAnchorX, popupAnchorY_basso]
 });
 
 var icona_diga2 = L.icon({
@@ -595,15 +595,15 @@ var marker_ambiente2 = L.marker(ambiente2, {
 
 var marker_indios = L.marker(indios, {
     icon: icona_indios
-}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples</p><p>The native peoples who live along the Xingu river have been the fiercest of the dam opposers.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples - Relocation</p><p>The territories under the influence of the dam overlap with numerous indian reserves, whose inhabitants had to be relocated.</p><p class="hint">Click to inspect</p>', customOptions);
 
 var marker_indios2 = L.marker(indios2, {
     icon: icona_indios2
-}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples</p><p>The native peoples who live along the Xingu river have been the fiercest of the dam opposers.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples - Cooperation</p><p>Despite the attempt for dialogue and cooperation, the feud between the construction companies and the Indios has been going on since the first project of the dam.</p><p class="hint">Click to inspect</p>', customOptions);
 
 var marker_indios3 = L.marker(indios3, {
     icon: icona_indios3
-}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples</p><p>The native peoples who live along the Xingu river have been the fiercest of the dam opposers.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples - Human Rights </p><p>The degradation of the quality of life for the natives has been one of the main topics of protest for the dam detractors.</p><p class="hint">Click to inspect</p>', customOptions);
 
 
 //DO UN id AI MARKER
