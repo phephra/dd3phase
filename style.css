@@ -592,6 +592,11 @@ a {
     transition: background-color 0.2s linear;
 }
 
+.btn-1:focus {
+    cursor: pointer;
+    outline: none;
+}
+
 .btn-2 {
     display: block;
     font-size: 1rem;
@@ -615,6 +620,12 @@ a {
     cursor: pointer;
     color: white;
     transition: color 0.3s ease-in-out;
+}
+
+.btn-2:focus {
+    cursor: pointer;
+    border: transparent;
+    outline: none;
 }
 
 .btn-3 {
@@ -648,9 +659,11 @@ a {
     transition: background-color 0.2s linear;
 }
 
-.statement_link {
-
+.btn-3:focus {
+    cursor: pointer;
+    outline: none;
 }
+
 
 #unveil {
     position: absolute;
