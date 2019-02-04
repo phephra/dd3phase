@@ -85,14 +85,24 @@
         db.collection("containerRisposte").get().then((snapshot) => {
             snapshot.docs.forEach(doc => {
                 numeroNo = doc.data().no;
-                document.getElementById('container_no').innerHTML = numeroNo + " people chose NO";
+                if(numeroNo === 1) {
+                    document.getElementById('container_no').innerHTML = numeroNo + " person chose NO";
+                }
+                else {
+                    document.getElementById('container_no').innerHTML = numeroNo + " people chose NO";
+                }
             })
         });
 
         db.collection("containerRisposte").get().then((snapshot) => {
             snapshot.docs.forEach(doc => {
                 numeroSi = doc.data().yes;
-                document.getElementById('container_si').innerHTML = numeroSi + " people chose YES";
+                if(numeroSi === 1) {
+                    document.getElementById('container_si').innerHTML = numeroSi + " person chose YES";
+                }
+                else {
+                    document.getElementById('container_si').innerHTML = numeroSi + " people chose YES";
+                }
             })
         });
 

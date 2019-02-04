@@ -21,13 +21,13 @@ function toggleNav() {
     }
     return openMenu();
 }
-/* Open the sidenav */
+/* Open the menu */
 function openMenu() {
     document.getElementById("nav").style.width = "100%";
     document.getElementsByClassName("menu-links")[0].style.opacity = "1";
 }
 
-/* Close/hide the sidenav */
+/* Close/hide the menu */
 function closeMenu() {
     document.getElementById("nav").style.width = "0";
     document.getElementsByClassName("menu-links")[0].style.opacity = "0";
@@ -322,6 +322,7 @@ map.setMaxZoom(2);
 
 var popupAnchorX = 200;
 var popupAnchorY = 0;
+var popupAnchorY_basso = 260;
 
 var iconAnchorX = 30;
 var iconAnchorY = 30;
@@ -399,7 +400,7 @@ var icona_diga = L.icon({
     iconUrl: '/assets/icons/icona_diga.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    popupAnchor: [popupAnchorX, popupAnchorY_basso]
 });
 
 var icona_diga_I = L.icon({
@@ -844,6 +845,7 @@ function areYouSure(decisione) {
 
     if (decisione === "torna") {
         document.getElementsByClassName('overlay')[1].classList.add("hidden");
+        document.getElementById("hai_finito").style.display = "block";
     }
 
     if (decisione === "avanti") {
@@ -984,6 +986,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Norte Energia invested in the construction and renovation of hospitals, which have already been delivered and equipped." ';
             document.getElementById("location-name").innerHTML = loco + ' Altamira ';
             document.getElementById("topic-name").innerHTML = ' Hospitals ';
+            document.getElementById("source_norte").href="https://pt.calameo.com/read/005631827e3560a3d7f49?authid=nrF0vTTowPtV";
             break;
         case "altamira2":
             console.log(switchIcona);
@@ -993,6 +996,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte built a modern system of sewage collection and treatment, with more than 200 km of network, and expanded the water supply system." ';
             document.getElementById("location-name").innerHTML = loco + ' Altamira ';
             document.getElementById("topic-name").innerHTML = ' Sewage and water supply ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/legados-sociais/saneamento-basico";
             break;
         case "altamira3":
             console.log(switchIcona);
@@ -1002,6 +1006,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The construction of five new neighborhoods in Altamira was completed in 2015. In total, 3,700 houses were built." ';
             document.getElementById("location-name").innerHTML = loco + ' Altamira ';
             document.getElementById("topic-name").innerHTML = ' Housing ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/legados-sociais/habitacao";
             break;
         case "diga":
             console.log(switchIcona);
@@ -1011,15 +1016,17 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "60 million people are going to be reached." ';
             document.getElementById("location-name").innerHTML = loco + ' Belo Monte Dam, Main Site ';
             document.getElementById("topic-name").innerHTML = ' Energy production ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/imprensa/releases/na-reta-final-100282";
             break;
         case "diga2":
             console.log(switchIcona);
             document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
-            document.getElementsByClassName("statement-text")[0].innerHTML = ' "Brazil needs to increase its installed capacity by 50% by 2021. A dam like Belo Monte, with its installed capacity of 11,233 MW of production, supplies about 17.6% of the necessary increase in installed capacity." ';
+            document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte confers greater security to the Electric System, due to the better use of the hydrological differences of flood and drought between the different regions of Brazil, which contribute to the Brazilian energy matrix." ';
             document.getElementById("location-name").innerHTML = loco + ' Belo Monte Dam, Main Site ';
             document.getElementById("topic-name").innerHTML = ' Efficiency ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/uhe-belo-monte/geracao-e-operacao";
             break;
         case "ambiente":
             console.log(switchIcona);
@@ -1029,6 +1036,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "More than 395 thousand wild animals were rescued. Healthy animals (92%) were returned to the natural habitat, while the rest were sent to scientific institutions or breeding grounds for conservation purposes. " ';
             document.getElementById("location-name").innerHTML = loco + ' Big Bend of the Xingu ';
             document.getElementById("topic-name").innerHTML = ' Impacts on fauna ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/legados-ambientais/fauna-resgate";
             break;
         case "ambiente2":
             console.log(switchIcona);
@@ -1038,6 +1046,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The environmental conditions around Volta Grande are kept stable by a "hydrograph of consensus" - a model that establishes the minimum river flow rate to keep the area environmentally healthy." ';
             document.getElementById("location-name").innerHTML = loco + ' Big Bend of the Xingu ';
             document.getElementById("topic-name").innerHTML = ' River flow ';
+            document.getElementById("source_norte").href="https://www1.folha.uol.com.br/internacional/en/brazil/2018/09/nearing-completion-belo-monte-dam-receives-criticisms-from-all-sides.shtml";
             break;
         case "indios":
             console.log(switchIcona);
@@ -1047,6 +1056,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The evolution of the Belo Monte project ensured that no centimeter of the more than 5 million hectares occupied by 9 ethnic groups was flooded by the reservoirs of the Plant." ';
             document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
             document.getElementById("topic-name").innerHTML = ' Displacement of people ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/povos-tradicionais/povos-tradicionais";
             break;
         case "indios2":
             console.log(switchIcona);
@@ -1056,6 +1066,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The indigenous communities actively participate in the discussions to define the actions that will be carried out in their territories. " ';
             document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
             document.getElementById("topic-name").innerHTML = ' Cooperation with local communities ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/povos-tradicionais/protagonismo-indigena";
             break;
         case "indios3":
             console.log(switchIcona);
@@ -1065,6 +1076,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The Basic Indigenous Environmental Component Project has been guaranteeing fundamental rights, promoting the quality of life and integrity of some 4,000 indigenous people." ';
             document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
             document.getElementById("topic-name").innerHTML = ' Human rights ';
+            document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/povos-tradicionais/povos-tradicionais";
             break;
         default:
             console.log("Non sto andando");
@@ -1078,60 +1090,70 @@ function unveilVersions(switchIcona) {
             document.getElementsByClassName("actor-name")[1].innerHTML = "Internet Press Service";
             document.getElementsByClassName("actor-type")[1].innerHTML = "News Agency";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The hospital was already there, and it had shut its doors in April 2014, leaving the 22,000 people of Brasil Novo without a hospital." ';
+            document.getElementById("source_other").href="http://www.ipsnews.net/2015/06/amazon-dam-also-brings-health-infrastructure-for-local-population/";
             break;
         case "altamira2":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_mongabay.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Mongabay";
             document.getElementsByClassName("actor-type")[1].innerHTML = "News";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Over the past year, Norte Energia´s license has been suspended because of its failure to fulfill the building of an adequate sewer and water system for the city of Altamira." ';
+            document.getElementById("source_other").href="https://news.mongabay.com/2017/09/belo-monte-dam-installation-license-suspended-housing-inadequacy-cited/";
             break;
         case "altamira3":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_ministerio.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Ministério Público Federal";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Brazilian Ministry";
-            document.getElementsByClassName("statement-text")[1].innerHTML = ' "The houses proposed by Norte Energia violated the Altamira municipality Construction Code. " ';
+            document.getElementsByClassName("statement-text")[1].innerHTML = ' "The houses proposed by Norte Energia violated the Altamira municipality Construction Code." ';
+            document.getElementById("source_other").href="https://news.mongabay.com/2017/09/belo-monte-dam-installation-license-suspended-housing-inadequacy-cited/";
             break;
         case "diga":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_antunes.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Walter Coronado Antunes";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Former Secretary of the Environment of the state of São Paulo";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Belo Monte Dam Complex is one of the least efficient hydro-power projects in the history of Brazil." ';
+            document.getElementById("source_other").href="https://en.wikipedia.org/wiki/Belo_Monte_Dam#cite_note-antunes-50";
             break;
         case "diga2":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_amazonwatch.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Amazon Watch";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Only 70% of the energy will go to the Brazilian population. The remaining 30% will be sold to power mining and industrial companies." ';
+            document.getElementById("source_other").href="https://amazonwatch.org/work/belo-monte-facts";
             break;
         case "ambiente":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_survival.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Survival International";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The proposed flow through the Volta Grande meant the river will not be capable of maintaining species diversity, risking extinction of hundreds of species." ';
+            document.getElementById("source_other").href="http://assets.survivalinternational.org/documents/266/Experts_Panel_BeloMonte_summary_oct2009.pdf";
             break;
         case "ambiente2":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_amazonconservation.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Amazon Conservation";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "A canal diverts much (up to 80%) of the river’s flow from the main reservoir to the canal reservoir, which feeds the turbines generating the electricity. As a result, downstream of the main dam is left with a much reduced flow (20%) for a stretch of 100 km." ';
+            document.getElementById("source_other").href="https://maaproject.org/2017/belo-monte/";
             break;
         case "indios":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_internationalrivers.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "International Rivers";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "20,000 people were displaced by the dam." ';
+            document.getElementById("source_other").href="https://www.internationalrivers.org/campaigns/belo-monte-dam";
             break;
         case "indios2":
-            document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_facingfinance.png";
-            document.getElementsByClassName("actor-name")[1].innerHTML = "Facing Finance";
-            document.getElementsByClassName("actor-type")[1].innerHTML = "News";
+            document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_openglobal.png";
+            document.getElementsByClassName("actor-name")[1].innerHTML = "Open Global Rights";
+            document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The meetings held to explain the impacts of the dam were highly inadequate—indigenous people had two days to review 26,000 pages of the technical study, with no interpreters." ';
+            document.getElementById("source_other").href="https://www.openglobalrights.org/how-not-to-produce-energy-lessons-from-brazils-belo-monte-dam/";
             break;
         case "indios3":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_ministerio.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Ministério Público Federal";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Brazilian Ministry";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Norte Energia violated 55 different obligations it had agreed to in order to guarantee the survival of indigenous groups, farmers and fishermen whose homes and lands will be lost." ';
+            document.getElementById("source_other").href="https://www.theguardian.com/world/2015/jun/16/brazil-belo-monte-dam-indigenous-groups-at-risk";
             break;
         default:
     }

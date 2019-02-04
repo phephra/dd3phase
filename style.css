@@ -648,6 +648,9 @@ a {
     transition: background-color 0.2s linear;
 }
 
+.statement_link {
+
+}
 
 #unveil {
     position: absolute;
