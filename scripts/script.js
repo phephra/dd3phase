@@ -565,16 +565,16 @@ var indios3 = L.latLng([(boundH/4)*0.6, (boundW/12)*7.2]);
 
 var marker_altamira = L.marker(altamira, {
     icon: icona_altamira,
-}).addTo(map).bindPopup('<p class="titolo_popup">Altamira</p><p>Altamira is one of one hundred and forty-four municipalities in the state of Pará, in northern Brazil.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Altamira - Hospitals</p><p>Sanitation is one of the main problems addressed by families living in the city of Altamira.</p><p class="hint">Click to inspect</p>', customOptions);
 
 
 var marker_altamira2 = L.marker(altamira2, {
     icon: icona_altamira2
-}).addTo(map).bindPopup('<p class="titolo_popup">Altamira</p><p>Altamira is one of one hundred and forty-four municipalities in the state of Pará, in northern Brazil.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Altamira - Sewers</p><p>The construction works for the sewers and the water supply system have been going on in Altamira for a long time, but their service is still cited as problematic.</p><p class="hint">Click to inspect</p>', customOptions);
 
 var marker_altamira3 = L.marker(altamira3, {
     icon: icona_altamira3
-}).addTo(map).bindPopup('<p class="titolo_popup">Altamira</p><p>Altamira is one of one hundred and forty-four municipalities in the state of Pará, in northern Brazil.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Altamira - Housing</p><p>The dramatic increase of the population of Altamira in the last years is linked to the presence of the workers in the dam construction and of thousands of indigenous people displaced.</p><p class="hint">Click to inspect</p>', customOptions);
 
 
 var marker_diga = L.marker(diga, {
@@ -587,11 +587,11 @@ var marker_diga2 = L.marker(diga2, {
 
 var marker_ambiente = L.marker(ambiente, {
     icon: icona_ambiente
-}).addTo(map).bindPopup('<p class="titolo_popup">Xingu River</p><p>By diverting the flow of the river, the building of the dam caused deadly consequences on the fauna and flora of the Amazon.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Xingu River - Flora and Fauna</p><p>The flooding of a previously wooded area and the desiccation of a part of the river caused deadly consequences on the fauna and flora of the Amazon.</p><p class="hint">Click to inspect</p>', customOptions);
 
 var marker_ambiente2 = L.marker(ambiente2, {
     icon: icona_ambiente2
-}).addTo(map).bindPopup('<p class="titolo_popup">Xingu River</p><p>By diverting the flow of the river, the building of the dam caused deadly consequences on the fauna and flora of the Amazon.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map).bindPopup('<p class="titolo_popup">Xingu River - River Flow</p><p>The building of the dam meant the diversion of the river flow, to obtain a more controllable water flow in the turbines.</p><p class="hint">Click to inspect</p>', customOptions);
 
 var marker_indios = L.marker(indios, {
     icon: icona_indios
