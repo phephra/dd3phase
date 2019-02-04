@@ -9,7 +9,7 @@ mappa:
     link a fonti statements *
     back 2 map e riappare tasto *
     rifinire icone e btn in tutorial -
-    testi specifici popup -*
+    testi specifici popup *
     popup overlappati sidenav - 
     user xp alle freccine - 
     testi statements in vh -
