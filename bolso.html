@@ -10,17 +10,67 @@
     <div id="loading-mask"></div>
 
     <a id="hamburger-icon" title="Menu">
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-    </a>
-    <div id="nav" class="menuSidenav">
-        <div class="menu-links white center">
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank">Research</a>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </a>
+        <div id="nav" class="menuSidenav">
+            <div class="menu-links white center">
+                <a href="index.html">Home</a>
+                <a href="#" id="about">About</a>
+                <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank">Research</a>
+            </div>
+            <div class="about-container">
+                <div class="about-a">
+                    <p class="title-text white">About the Project</p>
+                    <p class="about-text white"><span class="bold">The Great Amazonian Barrage</span> is the result of a long exploration of water related struggles as part of the Final Synthesis Studio (C3) of the Master Degree in Communication Design at Politecnico di Milano. After a thorough data-driven analysis of water conflicts and of dam controversies, using Digital Methods tools, this website aims to raise awareness on the impacts of hydroelectric power through the showcase of an exemplary case study: Belo Monte in Brazil. </p>
+                    <ul class="final-links fix">
+                        <a href="index.html" id="go-back">
+                            <li>Home</li>
+                        </a>
+                        <a id="about">
+                            <li class="white">About</li>
+                        </a>
+                        <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank" id="research">
+                            <li class="center">Research</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="about-b">
+                    <p class="team-text white"><span class="bold">Project by</span></p>
+                    <ul class="team white">
+                        <li>Alessandra Facchin</li>
+                        <li>Alessandro Ferrari</li>
+                        <li>Jingjing Gui</li>
+                        <li>Paula Lozano</li>
+                        <li>Nicolò Marchetti</li>
+                        <li>Valeria Quiroga</li>
+                    </ul>
+                    <p class="team-text white"><span class="bold">Faculty</span></p>
+                    <ul class="team white">
+                        <li>Paolo Ciuccarelli</li>
+                        <li>Stefano Mandato</li>
+                        <li>Michele Mauri</li>
+                        <li>Simone Vantini</li>
+                        <li>Salvatore Zingale</li>
+                    </ul>
+                    <p class="team-text white"><span class="bold">Teaching<br>Assistants</span></p>
+                    <ul class="team white">
+                        <li>Ángeles Briones</li>
+                        <li>Gabriele Colombo</li>
+                        <li>Jacopo Di Iorio</li>
+                        <li>Tommaso Elli</li>
+                        <li>Beatrice Gobbo</li>
+                        <li>Michele Invernizzi</li>
+                        <li>Ginevra Terenghi</li>
+                    </ul>
+                </div>
+                <div class="about-c">
+                    <a href="https://densitydesign.github.io/teaching-dd14/" target="blank"><img src="assets/img/Logo_DensityDesign.png" class="logo-uni"></a>
+                    <img class="logo-uni" src="assets/img/Logo_Politecnico_Milano.png">
+                </div>
+            </div>
         </div>
-    </div>
 
     <div id="outcome">
         <div class="outcome-container">
@@ -51,7 +101,7 @@
                     <a href="index.html" id="go-back">
                         <li>Home</li>
                     </a>
-                    <a id="about">
+                    <a id="about-2" onclick="openMenu(), showAbout()">
                         <li>About</li>
                     </a>
                     <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank" id="research">

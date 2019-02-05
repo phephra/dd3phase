@@ -1,9 +1,9 @@
 //////////////////////////////////////////////////////////
 //MENU
 //////////////////////////////////////////////////////////
+var hamburger = $('#hamburger-icon');
 
 $(document).ready(function () {
-    var hamburger = $('#hamburger-icon');
     hamburger.click(function () {
         hamburger.toggleClass('active');
         return false;
@@ -13,6 +13,7 @@ $(document).ready(function () {
 //MENUBAR
 
 document.getElementById("hamburger-icon").addEventListener("click", toggleNav);
+document.getElementById("about").addEventListener("click", showAbout);
 
 function toggleNav() {
     navSize = document.getElementById("nav").style.width;
@@ -21,17 +22,28 @@ function toggleNav() {
     }
     return openMenu();
 }
-/* Open the sidenav */
+/* Open the menu */
 function openMenu() {
     document.getElementById("nav").style.width = "100%";
     document.getElementsByClassName("menu-links")[0].style.opacity = "1";
+    document.getElementsByClassName("menu-links")[0].style.pointerEvents = "all";
 }
 
-/* Close/hide the sidenav */
+/* Close/hide the menu */
 function closeMenu() {
     document.getElementById("nav").style.width = "0";
     document.getElementsByClassName("menu-links")[0].style.opacity = "0";
+    document.getElementsByClassName("about-container")[0].style.opacity = "0";
+    document.getElementsByClassName("about-container")[0].style.pointerEvents = "none";
 }
+
+function showAbout() {
+    document.getElementsByClassName("menu-links")[0].style.opacity = "0";
+    document.getElementsByClassName("menu-links")[0].style.pointerEvents = "none";
+    document.getElementsByClassName("about-container")[0].style.opacity = "1";
+    document.getElementsByClassName("about-container")[0].style.pointerEvents = "all";
+}
+
 
 //////////////////////////////////////////////////////////
 //SCROLLMAGIC
