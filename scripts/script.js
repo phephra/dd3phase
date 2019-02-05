@@ -13,6 +13,8 @@ $(document).ready(function () {
 //MENUBAR
 
 document.getElementById("hamburger-icon").addEventListener("click", toggleNav);
+document.getElementById("about").addEventListener("click", showAbout);
+
 
 function toggleNav() {
     navSize = document.getElementById("nav").style.width;
@@ -25,13 +27,24 @@ function toggleNav() {
 function openMenu() {
     document.getElementById("nav").style.width = "100%";
     document.getElementsByClassName("menu-links")[0].style.opacity = "1";
+    document.getElementsByClassName("menu-links")[0].style.pointerEvents = "all";
 }
 
 /* Close/hide the menu */
 function closeMenu() {
     document.getElementById("nav").style.width = "0";
     document.getElementsByClassName("menu-links")[0].style.opacity = "0";
+    document.getElementsByClassName("about-container")[0].style.opacity = "0";
+    document.getElementsByClassName("about-container")[0].style.pointerEvents = "none";
 }
+
+function showAbout() {
+    document.getElementsByClassName("menu-links")[0].style.opacity = "0";
+    document.getElementsByClassName("menu-links")[0].style.pointerEvents = "none";
+    document.getElementsByClassName("about-container")[0].style.opacity = "1";
+    document.getElementsByClassName("about-container")[0].style.pointerEvents = "all";
+}
+
 
 //////////////////////////////////////////////////////////
 //Altre funzioni

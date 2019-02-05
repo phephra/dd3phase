@@ -178,6 +178,36 @@ a {
     cursor: pointer;
 }
 
+.about-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 15vh;
+    opacity: 0;
+    transition: 0.5 ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100%;
+    pointer-events: none;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.about-a {
+    position: relative;
+    grid-column: 2/7;
+}
+
+.about-b {
+    position: relative;
+    grid-column: 7/10;
+}
+
+.about-c {
+    position: relative;
+    grid-column: 11/13;
+}
+
 /*SECTIONS*/
 
 #landing {
@@ -580,6 +610,29 @@ a {
 }
 
 /*BUTTON STYLES*/
+.btn-dummy {
+    display: block;
+    font-size: 1rem;
+    font-family: "IBM Plex Sans Medium", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    text-decoration: none;
+    min-width: 8vw;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
 
 .btn-1 {
     display: block;
@@ -822,6 +875,26 @@ a {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 
+#titolone-mappona {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 3.5vh;
+    padding-bottom: 2vh;
+    width: auto;
+    z-index: 15;
+}
+
+.map-title-text {
+    font-family: "IBM Plex Serif Bold", serif;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    z-index: 35;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 /*TEXT STYLES*/
 
 .hint {
@@ -913,7 +986,6 @@ a {
     margin-right: auto;
     font-size: 1rem;
     font-family: "IBM Plex Sans Regular", sans-serif;
-    text-align: center;
     margin-bottom: 2.5rem;
     max-width: 80%;
 }
@@ -925,9 +997,18 @@ a {
     font-size: 1.4rem;
     line-height: 2rem;
     font-family: "IBM Plex Sans Regular", sans-serif;
-    text-align: center;
     margin-bottom: 2.5rem;
     max-width: 90%;
+}
+
+.about-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: "IBM Plex Sans Regular", sans-serif;
+    margin-bottom: 2.5rem;
 }
 
 .actor-name {

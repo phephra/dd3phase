@@ -4,14 +4,14 @@ brazil:
     nuovo layout - 
     riesportare immagini -
 mappa: 
-    titolo mappa -
+    //titolo mappa -
     legende overlay -
-    link a fonti statements *
-    back 2 map e riappare tasto *
+    //link a fonti statements *
+    //back 2 map e riappare tasto *
     rifinire icone e btn in tutorial -
-    testi specifici popup *
+    //testi specifici popup *
     popup overlappati sidenav - 
-    user xp alle freccine - 
+    //user xp alle freccine * nun ze po fa
     testi statements in vh -
     fixare zoom involontario -
 scenari:
@@ -20,5 +20,5 @@ scenari:
     grafici belli -
 outcome:
     layout -
-    bolso cambiare titolo *
+    //bolso cambiare titolo *
     about page -
