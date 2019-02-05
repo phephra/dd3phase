@@ -11,12 +11,12 @@ mappa:
     rifinire icone e btn in tutorial -
     testi specifici popup *
     popup overlappati sidenav - 
-    user xp alle freccine - 
+    user xp alle freccine *
     testi statements in vh -
-    fixare zoom involontario -
+    fixare zoom involontario *
 scenari:
     terminologia -
-    link a paper -
+    link a paper *
     grafici belli -
 outcome:
     layout -

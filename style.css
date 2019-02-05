@@ -1005,6 +1005,7 @@ a {
 
 .left:hover {
     cursor: pointer;
+    transform: rotate(-135deg) scale(1.2);
 }
 
 .right {
@@ -1029,6 +1030,7 @@ a {
 
 .right:hover {
     cursor: pointer;
+    transform: rotate(45deg) scale(1.2);
 }
 
 /*POPUP STYLES*/
