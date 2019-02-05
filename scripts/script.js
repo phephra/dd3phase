@@ -80,12 +80,10 @@ function vieniOverlay2() {
 
 //Cambiare contenuto agli scenari
 function scenario1() {
-    var a = "<p class='title-text'>License granted.</p><p class='base_text'>The plant can now work at its full power, 4,571 MW, which will produce energy for the whole region and prevent the production of CO2. On the other hand, the river’s flow will soon be affected by the dam, and the decrease of its discharge means a progressive decrease in energy production.</p><img src='/assets/img/scenario_1.svg' class='scenario-viz'><button type='button' class='btn-2' onclick='scenario2()'>What if the license was denied?</button><a href='bolso.html'><button type='button' class='btn-1'>Got it</button></a>"
     document.getElementsByClassName('contenuto_overlay')[1].innerHTML = a;
 }
 
 function scenario2() {
-    var b = "<p class='title-text'>License denied.</p><p class='base_text'>Belo Monte will now be shut down. The damage caused by the construction of the dam can’t be reversed, but the Belo Monte case can be a legal previous for other projects of mega dams in Brazil. On the other hand, the emissions of CO2 will increase in the next years, as fossil fuels will be used to compensate for the lack of hydroelectric energy.</p><img src='/assets/img/scenario_2.svg' class='scenario-viz'><button type='button' class='btn-2' onclick='scenario1()'>What if the license was granted?</button><a href='bolso.html'><button type='button' class='btn-1'>Got it</button></a>"
     document.getElementsByClassName('contenuto_overlay')[1].innerHTML = b;
 }
 //////////////////////////////////////////////////////////
