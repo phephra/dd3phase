@@ -18,37 +18,44 @@
         <div class="menu-links white center">
             <a href="index.html">Home</a>
             <a href="#">About</a>
-            <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank">View the research</a>
+            <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank">Research</a>
         </div>
     </div>
 
     <div id="outcome">
         <div class="outcome-container">
-            <p class="bolso-text white center">Was your choice difficult?</p>
-            <p class="base_text white" id="container_si">0</p>
-            <p class="base_text white" id="container_no">0</p>
-            <p class="base_text white">What you have experienced has happened and is going to happen many times again, for every single dam that is planned to be built in Brazil. The Belo Monte case is soon to be closed: whatever its outcome, it will set a precedent for future environmental justice appeals. This concerns all of us, and our planet.</p>
+            <div class="outcome-a">
+                <p class="outcome-number white center" id="container_si">0</p>
+                <p class="bolso-text white center" id="commento_si"></p>
+            </div>
+            <div class="outcome-b">
+                <p class="outcome-number white center" id="container_no">0</p>
+                <p class="bolso-text white center" id="commento_no"></p>
+            </div>
+            <div class="outcome-text-container">
+                    <p class="title-text white">Was your choice<br> difficult?</p>
+                    <p class="bolso-text white">What you have experienced has happened and is going to happen many times again, for every single dam that is planned to be built in Brazil. The Belo Monte case is soon to be closed: whatever its outcome, it will set a precedent for future environmental justice appeals. This concerns all of us, and our planet.</p>
+            </div>
         </div>
-        <a href="#bolso" class="down">&#8595;</a>
     </div>
     <div id="bolso">
         <div id="bolso-container">
             <div class="a">
-                <p class="title-text white">Aaaaah, Saudade.</p>
+                <p class="title-text white">Wild Card: Bolsonaro</p>
                 <p class="bolso-text white">
-                    01/01/2019. The new President <span class="bold">Jair Bolsonaro</span>, on the day of his official investiture, stripped the agency in charge of indigenous affairs of the power to demarcate indigenous lands with his first decree. Instead, the agriculture ministry will take over those functions.
+                    The new President <span class="bold">Jair Bolsonaro</span>, on the day of his official investiture, stripped the agency in charge of indigenous affairs of the power to demarcate indigenous lands with his first decree. Instead, the agriculture ministry will take over those functions.
                     Today, Bolsonaro’s Brazil seems to be a fertile land for businesses and enterprise who wish to maximise the exploitation of natural resources, stomping over environmental rights.
                 </p>
                 <p class="bolso-text white">What will the future hold?<br>Only time will tell.</p>
                 <ul class="final-links">
+                    <a href="index.html" id="go-back">
+                        <li>Home</li>
+                    </a>
                     <a id="about">
                         <li>About</li>
                     </a>
                     <a href="https://densitydesign.github.io/teaching-dd14/es02/group07/" target="_blank" id="research">
-                        <li class="center">View the research</li>
-                    </a>
-                    <a href="index.html" id="go-back">
-                        <li>Home</li>
+                        <li class="center">Research</li>
                     </a>
                 </ul>
             </div>
@@ -85,11 +92,13 @@
         db.collection("containerRisposte").get().then((snapshot) => {
             snapshot.docs.forEach(doc => {
                 numeroNo = doc.data().no;
-                if(numeroNo === 1) {
-                    document.getElementById('container_no').innerHTML = numeroNo + " person chose NO";
+                if(numeroNo > 1) {
+                    document.getElementById('container_no').innerHTML = numeroNo;
+                    document.getElementById('commento_no').innerHTML = "people chose <br><span class='bold'>NO</span>";
                 }
                 else {
-                    document.getElementById('container_no').innerHTML = numeroNo + " people chose NO";
+                    document.getElementById('container_no').innerHTML = numeroNo;
+                    document.getElementById('commento_no').innerHTML = "person chose <br><span class='bold'>NO</span>";
                 }
             })
         });
@@ -97,11 +106,13 @@
         db.collection("containerRisposte").get().then((snapshot) => {
             snapshot.docs.forEach(doc => {
                 numeroSi = doc.data().yes;
-                if(numeroSi === 1) {
-                    document.getElementById('container_si').innerHTML = numeroSi + " person chose YES";
+                if(numeroSi > 1) {
+                    document.getElementById('container_si').innerHTML = numeroSi;
+                    document.getElementById('commento_si').innerHTML = "people chose <br><span class='bold'>YES</span>";
                 }
                 else {
-                    document.getElementById('container_si').innerHTML = numeroSi + " people chose YES";
+                    document.getElementById('container_si').innerHTML = numeroSi;
+                    document.getElementById('commento_si').innerHTML = "person chose <br><span class='bold'>YES</span>";
                 }
             })
         });

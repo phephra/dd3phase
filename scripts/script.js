@@ -80,15 +80,6 @@ function scenario2() {
 //////////////////////////////////////////////////////////
 
 
-
-//WORLD_MAP_FADE
-var fadein_tween_world = TweenMax.to('#world_map', 0.4, {
-    opacity: 1
-});
-var fadeout_tween_world = TweenMax.to('#world_map', 0.4, {
-    opacity: 0
-});
-
 //BRAZIL_MAP_FADE
 var fadein_tween_brazil = TweenMax.to('#brazil_map', 0.4, {
     opacity: 1
@@ -136,10 +127,10 @@ var controller = new ScrollMagic.Controller({
         addIndicators: true
 });
 
-// build scene 01  LANDING goes up and...
+// build scene 01  - LANDING goes up and...
 new ScrollMagic.Scene({
         triggerElement: "#landing",
-        duration: 600,
+        duration: 400,
         offset: 0
     })
     .setPin("#landing")
@@ -150,97 +141,54 @@ new ScrollMagic.Scene({
     })
     .addTo(controller);
 
-// build scene 02  Scene 01 blendet aus
+// 03 - pinno introduzione
 new ScrollMagic.Scene({
-        triggerElement: "#landing",
-        offset: 200,
-        duration: 0
-    })
-    .setPin("#landing")
-    .setTween("#landing", {
-        autoAlpha: 0
-    })
-    .addTo(controller);
-
-// build scene 03  Introduzione
-new ScrollMagic.Scene({
-        triggerElement: "#world-map-text",
-        duration: 200
-    })
-    .setPin("#landing")
-    .setTween("#world-map-text p", {
-        y: -500,
-        ease: Linear.easeNone
-    })
-    .addTo(controller);
+    triggerElement: "#world-map-text",
+})
+.setPin("#world-map-text")
+.addTo(controller);
 
 // build scene 04 - map appears
 new ScrollMagic.Scene({
         triggerElement: '#world-map-text',
         duration: 300,
+        offset: 200
     })
-    .setPin("#landing")
     .setTween(fadein_tween_brazil)
     .addTo(controller);
+
+// build scene 05 - intro disappears
+new ScrollMagic.Scene({
+    triggerElement: '#world-map-text',
+    duration: 200,
+})
+.setTween("#world-map-text", {
+    autoAlpha: 0,
+    ease: Linear.easeNone
+})
+.addTo(controller);
 
 // build scene 05 - pinna brasile
 new ScrollMagic.Scene({
         triggerElement: "#world-map-text",
-        duration: '200%'
     })
     .setPin("#brazil_map")
     .addTo(controller);
 
-// build scene 06 - pinna belomonte intro
-new ScrollMagic.Scene({
-        triggerElement: "#world-map-text",
-        duration: 3500
-    })
-    .setPin("#belomonte_intro")
-    .addTo(controller);
-
 // build scene 07 - overlay appears
 new ScrollMagic.Scene({
-        triggerElement: '#world-map-text',
+        triggerElement: '#brazil_map',
         duration: 500,
         offset: 600
     })
-    .setPin("#landing")
     .setTween(fadein_tween_river)
     .addTo(controller);
 
 // build scene 08 - pinna overlay
 new ScrollMagic.Scene({
-        triggerElement: "#world-map-text",
-        duration: 3000
+        triggerElement: "#river_map",
     })
     .setPin("#river_map")
-    .addTo(controller);
-
-// build scene 09 - muovi testo
-new ScrollMagic.Scene({
-        triggerElement: "river_map",
-        duration: 200,
-        offset: 1000
-    })
-    .setPin("#landing")
-    .setTween("#brazil-map-text", {
-        y: 0,
-        ease: Linear.easeNone
-    })
-    .addTo(controller);
-
-// build scene 10 - muovi testo
-new ScrollMagic.Scene({
-        triggerElement: "river_map",
-        duration: 200,
-        offset: 1000
-    })
-    .setPin("#landing")
-    .setTween("#brazil-map-text", {
-        y: 0,
-        ease: Linear.easeNone
-    })
     .addTo(controller);
 
 //build scene 11 - Appare belomonte intro
@@ -249,30 +197,30 @@ new ScrollMagic.Scene({
         offset: 100,
         duration: 200
     })
-    .setPin("#landing")
     .setTween(fadein_tween_belomonte)
     .addTo(controller);
+
+// build scene 12 - pinna belomonte intro
+new ScrollMagic.Scene({
+    triggerElement: "#belomonte_intro",
+})
+.setPin("#belomonte_intro")
+.addTo(controller);
 
 //build scene 12 - Appare XINGU_MAP
 new ScrollMagic.Scene({
         triggerElement: '#brazil-map-text',
-        offset: 1000,
-        duration: 200
+        offset: 800,
+        duration: 300
     })
-    .setPin("#landing")
     .setTween(fadein_tween_xingu)
     .addTo(controller);
 
 // build scene 13 - pinna mappa
 new ScrollMagic.Scene({
-        triggerElement: "#brazil-map-text",
-        duration: 4000
+        triggerElement: "#xingu_map",
     })
     .setPin("#xingu_map")
-    .setTween("river_map", {
-        autoAlpha: 0,
-        ease: Linear.easeNone
-    })
     .addTo(controller);
 
 

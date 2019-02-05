@@ -20,5 +20,5 @@ scenari:
     grafici belli -
 outcome:
     layout -
-    bolso cambiare titolo -
+    bolso cambiare titolo *
     about page -

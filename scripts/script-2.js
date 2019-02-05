@@ -48,12 +48,17 @@ var bolso_fadeout = TweenMax.to('.b', 0.4, {
 
 
 //INITALIZE SCROLLMAGIC
-var controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller({
+    globalSceneOptions: { // options for every scene
+        reverse: true,
+        triggerHook: 'onLeave'
+        },
+        addIndicators: true
+});
 
 // build scene 01  LANDING goes up and...
 new ScrollMagic.Scene({
         triggerElement: "#outcome",
-        triggerHook: "onLeave",
         duration: 600,
         offset: 0
     })
@@ -63,67 +68,31 @@ new ScrollMagic.Scene({
         autoAlpha: 0,
         ease: Linear.easeNone
     })
-    .addIndicators()
     .addTo(controller);
 
-// build scene 02  Scene 01 blendet aus
-new ScrollMagic.Scene({
-        triggerElement: "#outcome",
-        triggerHook: "onLeave",
-        offset: 200,
-        duration: 0
-    })
-    .setPin("#outcome")
-    .setTween("#outcome", {
-        autoAlpha: 0
-    })
-    .addIndicators()
-    .addTo(controller);
-
-// build scene 03  appare testo bolsi
-new ScrollMagic.Scene({
-        triggerElement: "#bolso",
-        triggerHook: "onLeave",
-        duration: 500
-    })
-    .setPin("#outcome")
-    .setTween("#bolso-container", {
-        ease: Linear.easeNone
-    })
-    .addIndicators()
-    .addTo(controller);
-
-// build scene 04 - pinna testo bolsy
+// build scene 03 - pinna div bolso
     new ScrollMagic.Scene({
-            triggerElement: "#bolso",
-            triggerHook: "onLeave",
-            duration: 5000
-        })
-        .setPin("#bolso-container")
-        .addIndicators()
-        .addTo(controller);
+        triggerElement: "#bolso",
+    })
+    .setPin("#bolso")
+    .addTo(controller);
 
-// build scene 05  fadein bolsy
+// build scene 04  fadein bolsy
 new ScrollMagic.Scene({
         triggerElement: "#bolso",
-        triggerHook: "onLeave",
-        reverse: true,
-        duration: 300
+        triggerHook: 'onEnter',
+        duration: 0,
+        offset: 200
     })
-    .setPin("#outcome")
     .setTween(bolso_fadein)
-    .addIndicators()
     .addTo(controller);
 
-// build scene 06 - pinna bolsy
-    new ScrollMagic.Scene({
-            triggerElement: "#bolso",
-            triggerHook: "onLeave",
-            duration: 5000
-        })
-        .setPin(".b")
-        .addIndicators()
-        .addTo(controller);
+// build scene 05 - pinna bolsy
+new ScrollMagic.Scene({
+    triggerElement: ".b",
+})
+.setPin(".b")
+.addTo(controller);
 
 //CARICAMENTO
 window.onload = function () {
