@@ -5,7 +5,7 @@ brazil:
     riesportare immagini *
 mappa: 
     titolo mappa *
-    legende overlay -
+    legende overlay *
     link a fonti statements *
     back 2 map e riappare tasto *
     rifinire icone e btn in tutorial *
@@ -15,7 +15,7 @@ mappa:
     testi statements in vh *
     fixare zoom involontario *
 scenari:
-    terminologia -
+    terminologia *
     link a paper *
     grafici belli *
 * outcome:
