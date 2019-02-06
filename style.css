@@ -1222,6 +1222,7 @@ a {
     }
     .contenuto_overlay {
         width: 75vw;
+        top: 7.5vh;
     }
     .title-text {
         font-size: 1.8rem;
