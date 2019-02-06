@@ -49,7 +49,13 @@ function showAbout() {
 //SCROLLMAGIC
 /////////////////////////////////////////////////////////
 
-
+//BOLSO_CONTAINER 
+var bolsodeniro_fadein = TweenMax.to('#bolso', 0.4, {
+    opacity: 1
+});
+var bolsodeniro_fadeout = TweenMax.to('#bolso', 0.4, {
+    opacity: 0
+});
 //BOLSO_FADE
 var bolso_fadein = TweenMax.to('.b', 0.4, {
     opacity: 1
@@ -76,11 +82,21 @@ new ScrollMagic.Scene({
     })
     .setPin("#outcome")
     .setTween(".outcome-container", {
-        y: -300,
+        y: -100,
         autoAlpha: 0,
         ease: Linear.easeNone
     })
     .addTo(controller);
+
+
+// build scene 02  fadein BOLSO
+new ScrollMagic.Scene({
+    triggerElement: "#bolso",
+    triggerHook: 'onCenter',
+    duration: 200,
+})
+.setTween(bolsodeniro_fadein)
+.addTo(controller);
 
 // build scene 03 - pinna div bolso
     new ScrollMagic.Scene({

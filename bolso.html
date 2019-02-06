@@ -75,16 +75,11 @@
     <div id="outcome">
         <div class="outcome-container">
             <div class="outcome-a">
-                <p class="outcome-number white center" id="container_si">0</p>
-                <p class="bolso-text white center" id="commento_si"></p>
+                <p class="persone-text" id="container_si"></p>
+                <p class="persone-text" id="container_no"></p>
+                <div class="outcome-text-container">
+                    <p class="bolso-text white"><span class="bold">Was your choice difficult?</span><br> What you have experienced has happened and is going to happen many times again, for every single dam that is planned to be built in Brazil. The Belo Monte case is soon to be closed: whatever its outcome, it will set a precedent for future environmental justice appeals. This concerns all of us, and our planet.</p>
             </div>
-            <div class="outcome-b">
-                <p class="outcome-number white center" id="container_no">0</p>
-                <p class="bolso-text white center" id="commento_no"></p>
-            </div>
-            <div class="outcome-text-container">
-                    <p class="title-text white">Was your choice<br> difficult?</p>
-                    <p class="bolso-text white">What you have experienced has happened and is going to happen many times again, for every single dam that is planned to be built in Brazil. The Belo Monte case is soon to be closed: whatever its outcome, it will set a precedent for future environmental justice appeals. This concerns all of us, and our planet.</p>
             </div>
         </div>
     </div>
@@ -143,12 +138,10 @@
             snapshot.docs.forEach(doc => {
                 numeroNo = doc.data().no;
                 if(numeroNo > 1) {
-                    document.getElementById('container_no').innerHTML = numeroNo;
-                    document.getElementById('commento_no').innerHTML = "people chose <br><span class='bold'>NO</span>";
+                    document.getElementById('container_no').innerHTML = "<span class='outcome-number white'>" + numeroNo + "</span>" + " people chose <span class='bold white'>NO</span>";
                 }
                 else {
-                    document.getElementById('container_no').innerHTML = numeroNo;
-                    document.getElementById('commento_no').innerHTML = "person chose <br><span class='bold'>NO</span>";
+                    document.getElementById('container_no').innerHTML = "<span class='outcome-number white'>" + numeroNo + '</span>' + " person chose <span class='bold white'>NO</span>";
                 }
             })
         });
@@ -157,12 +150,10 @@
             snapshot.docs.forEach(doc => {
                 numeroSi = doc.data().yes;
                 if(numeroSi > 1) {
-                    document.getElementById('container_si').innerHTML = numeroSi;
-                    document.getElementById('commento_si').innerHTML = "people chose <br><span class='bold'>YES</span>";
+                    document.getElementById('container_si').innerHTML = "<span class='outcome-number white'>" + numeroSi + "</span>" + " people chose <span class='bold white'>YES</span>";
                 }
                 else {
-                    document.getElementById('container_si').innerHTML = numeroSi;
-                    document.getElementById('commento_si').innerHTML = "person chose <br><span class='bold'>YES</span>";
+                    document.getElementById('container_si').innerHTML = "<span class='outcome-number white'>" + numeroSi + '</span>' + " person chose <span class='bold white'>YES</span>";
                 }
             })
         });

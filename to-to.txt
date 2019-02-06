@@ -18,7 +18,7 @@ scenari:
     terminologia -
     link a paper *
     grafici belli *
-outcome:
-    layout -
+* outcome:
+    layout *
     bolso cambiare titolo *
     about page *
