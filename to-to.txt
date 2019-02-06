@@ -8,16 +8,16 @@ mappa:
     legende overlay -
     link a fonti statements *
     back 2 map e riappare tasto *
-    rifinire icone e btn in tutorial -
+    rifinire icone e btn in tutorial *
     testi specifici popup *
     popup overlappati sidenav - 
     user xp alle freccine *
-    testi statements in vh -
+    testi statements in vh *
     fixare zoom involontario *
 scenari:
     terminologia -
     link a paper *
-    grafici belli -
+    grafici belli *
 outcome:
     layout -
     bolso cambiare titolo *

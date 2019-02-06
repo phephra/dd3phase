@@ -184,13 +184,31 @@ a {
     left: 0;
     padding-top: 15vh;
     opacity: 0;
-    transition: 0.5 ease-in-out;
+    transition: 0.1s ease-in-out;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
     height: 100%;
     pointer-events: none;
     max-height: 100%;
     overflow-y: scroll;
+}
+.team {
+    text-indent: 0px;
+    padding-left: 0;
+    padding-bottom: 2vh;
+    margin-top: 0;
+}
+
+.team-text {
+    font-family: "IBM Plex Sans Regular", sans-serif;
+    font-size: 1rem;
+}
+
+.team li {
+    font-family: "IBM Plex Sans Regular", sans-serif;
+    list-style: none;
+    font-size: 1rem;
 }
 
 .about-a {
@@ -200,12 +218,13 @@ a {
 
 .about-b {
     position: relative;
-    grid-column: 7/10;
+    grid-column: 8/10;
 }
 
 .about-c {
+    padding-top: 3vh;
     position: relative;
-    grid-column: 11/13;
+    grid-column: 10/11;
 }
 
 /*SECTIONS*/
@@ -433,6 +452,12 @@ a {
     padding: 1.5rem;    
     flex-grow: 1;
     text-align: center;
+}
+
+.fix {
+    margin-left: 0;
+    padding-left: 0;
+    left: -1.3rem;
 }
 
 #go-back {
@@ -875,26 +900,6 @@ a {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
 }
 
-#titolone-mappona {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-left: 3.5vh;
-    padding-bottom: 2vh;
-    width: auto;
-    z-index: 15;
-}
-
-.map-title-text {
-    font-family: "IBM Plex Serif Bold", serif;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    font-size: 1.5rem;
-    z-index: 35;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
 /*TEXT STYLES*/
 
 .hint {
@@ -1008,7 +1013,7 @@ a {
     font-size: 1.4rem;
     line-height: 2rem;
     font-family: "IBM Plex Sans Regular", sans-serif;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .actor-name {
@@ -1030,7 +1035,7 @@ a {
 }
 
 .statement-text {
-    font-size: 2.4vh;
+    font-size: 1.3rem;
     font-family: "IBM Plex Sans Bold", sans-serif;
     color: #000000;
 }
@@ -1059,8 +1064,14 @@ a {
 
 .icone_tutorial {
     width: 3vw;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.logo-uni {
+    width: 8vw;
+    display: block;
+    padding-bottom: 8vh;
 }
 
 .left {
@@ -1086,6 +1097,7 @@ a {
 
 .left:hover {
     cursor: pointer;
+    transform: rotate(-135deg) scale(1.2);
 }
 
 .right {
@@ -1110,6 +1122,7 @@ a {
 
 .right:hover {
     cursor: pointer;
+    transform: rotate(45deg) scale(1.2);
 }
 
 /*POPUP STYLES*/
@@ -1156,3 +1169,78 @@ a {
 .white {
     color: white;
 }
+
+
+@media only screen and (max-height: 900px) {
+    .landing-title {
+        font-size: 4rem;
+    }
+    .landing-subtitle {
+        font-size: 1.2rem;
+        max-width: 70%;
+
+    }
+    .intro-text {
+        font-size: 2.4rem;
+        line-height: 3.3rem;
+    }
+    .icone_tutorial {
+        width: 3vw;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    #screen_tutorial {
+        width: 7vw;
+    }
+    .contenuto_overlay {
+        width: 75vw;
+    }
+    .title-text {
+        font-size: 1.8rem;
+    }
+    .tutorial-text {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    .testino-tutorial {
+        width: 100%;
+    }
+    .base_text {
+        font-size: 0.8rem;
+        max-width: 95%;
+    }
+    .btn-dummy {
+        font-size: 0.8rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        margin-bottom: 0rem;
+    }
+    .btn-1 {
+        font-size: 0.8rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .btn-2 {
+        font-size: 0.7rem;
+    }
+    .btn-3 {
+        font-size: 0.8rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .actor-name {
+        font-size: 0.8rem;
+    }
+    .actor-type {
+        font-size: 0.8rem;
+        max-width: 90%;
+    }
+    .statement-text {
+        font-size: 1rem;
+        padding-bottom: 0rem;
+    } 
+    .a {
+        margin-top: 12vh;
+    }    
+}
+
