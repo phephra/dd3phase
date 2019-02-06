@@ -80,12 +80,12 @@ function vieniOverlay2() {
 
 //Cambiare contenuto agli scenari
 function scenario1() {
-    var a = "<p class='title-text'>License granted.</p><p class='base_text'>The plant can now work at its full power, 4,571 MW, which will produce energy for the whole region and prevent the production of CO2. On the other hand, the river’s flow will soon be affected by the dam, and the decrease of its discharge means a progressive decrease in energy production.</p><a href='https://www.researchgate.net/publication/329103585_The_Belo_Monte_effect_how_an_enormous_dam_has_already_affected_a_rich_Amazon_ecosystem_-_and_what_the_future_might_hold_for_it' target='_blank'class='btn-2'>Source&#x2197;</a><img src='/assets/img/scenario_1.png' class='scenario-viz'><button type='button' class='btn-2' onclick='scenario2()'>What if the license was denied?</button><a href='bolso.html'><button type='button' class='btn-1'>Got it</button></a>"
+    var a = "<p class='title-text'>License granted.</p><p class='base_text'>Belo Monte Dam will now work at its full power. The Ministry of Mines and Energy estimates that the dam will grant a minimum capacity production of 4.571 MW and will fuel the whole Parà region, preventing the emission of further CO2 in the next years. Nevertheless, according to the Institute of Geosciences of the University of Sao Paulo, Xingu river flow will be affected by the dam, causing a decrease in its discharge and eventually in the energy production of the dam itself.</p><a href='https://www.researchgate.net/publication/329103585_The_Belo_Monte_effect_how_an_enormous_dam_has_already_affected_a_rich_Amazon_ecosystem_-_and_what_the_future_might_hold_for_it' target='_blank'class='btn-2'>Source&#x2197;</a><img src='/assets/img/scenario_1.png' class='scenario-viz'><button type='button' class='btn-2' onclick='scenario2()'>What if the license was denied?</button><a href='bolso.html'><button type='button' class='btn-1'>Got it</button></a>"
     document.getElementsByClassName('contenuto_overlay')[1].innerHTML = a;
 }
 
 function scenario2() {
-    var b = "<p class='title-text'>License denied.</p><p class='base_text'>Belo Monte will now be shut down. The damage caused by the construction of the dam can’t be reversed, but the Belo Monte case can be a legal previous for other projects of mega dams in Brazil. On the other hand, the emissions of CO2 will increase in the next years, as fossil fuels will be used to compensate for the lack of hydroelectric energy.</p><a href='http://franke.uchicago.edu/bigproblems/BPRO29000-2014/Team09-EnergyPolicyPaperBeloMonte.pdf' target='_blank'class='btn-2'>Source&#x2197;</a><img src='/assets/img/scenario_2.png' class='scenario-viz'><button type='button' class='btn-2' onclick='scenario1()'>What if the license was granted?</button><a href='bolso.html'><button type='button' class='btn-1'>Got it</button></a>"
+    var b = "<p class='title-text'>License denied.</p><p class='base_text'>Belo Monte dam will be shut down. According to the Interamerican Association for Environmental Defense (AIDA) its construction has irreversibly damaged Xingu River ecosystem, and the promotion of restoration programs can just mitigate these effects. Brazilian Electricity Regulatory Agency (ANEEL) estimated that CO2 emissions will increase by 10 million tons per year, as fossil fuels are assumed to be used instead for energy production.</p><a href='http://franke.uchicago.edu/bigproblems/BPRO29000-2014/Team09-EnergyPolicyPaperBeloMonte.pdf' target='_blank'class='btn-2'>Source&#x2197;</a><img src='/assets/img/scenario_2.png' class='scenario-viz'><button type='button' class='btn-2' onclick='scenario1()'>What if the license was granted?</button><a href='bolso.html'><button type='button' class='btn-1'>Got it</button></a>"
     document.getElementsByClassName('contenuto_overlay')[1].innerHTML = b;
 }
 //////////////////////////////////////////////////////////
@@ -267,10 +267,14 @@ var ultima_mappa = L.imageOverlay('', bounds);
 
 function cambiaMappa(argomento) {
     ultima_mappa = L.imageOverlay('/assets/img/mappina' + argomento + '.png', bounds).addTo(map);
+    document.getElementById("legenda_overlay").style.display = "block";
+    document.getElementById("legenda_overlay").src = "/assets/img/legenda_overlay" + argomento + ".svg";
 }
 
 function resetMappa() {
     map.removeLayer(ultima_mappa);
+    document.getElementById("legenda_overlay").style.display = "none";
+    document.getElementById("legenda_overlay").src = "";
 }
 
 //IMPEDIMENTI ZOOM E PAN
@@ -957,7 +961,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte built a modern system of sewage collection and treatment, with more than 200 km of network, and expanded the water supply system." ';
             document.getElementById("location-name").innerHTML = loco + ' Altamira ';
-            document.getElementById("topic-name").innerHTML = ' Sewage and water supply ';
+            document.getElementById("topic-name").innerHTML = ' Sewers ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/legados-sociais/saneamento-basico";
             break;
         case "altamira3":
@@ -976,8 +980,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "60 million people are going to be reached." ';
-            document.getElementById("location-name").innerHTML = loco + ' Belo Monte Dam, Main Site ';
-            document.getElementById("topic-name").innerHTML = ' Energy production ';
+            document.getElementById("location-name").innerHTML = loco + ' UHE Belo Monte ';
+            document.getElementById("topic-name").innerHTML = ' Main Site ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/imprensa/releases/na-reta-final-100282";
             break;
         case "diga2":
@@ -986,8 +990,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte confers greater security to the Electric System, due to the better use of the hydrological differences of flood and drought between the different regions of Brazil, which contribute to the Brazilian energy matrix." ';
-            document.getElementById("location-name").innerHTML = loco + ' Belo Monte Dam, Main Site ';
-            document.getElementById("topic-name").innerHTML = ' Efficiency ';
+            document.getElementById("location-name").innerHTML = loco + ' UHE Belo Monte ';
+            document.getElementById("topic-name").innerHTML = ' Pimental Site ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/uhe-belo-monte/geracao-e-operacao";
             break;
         case "ambiente":
@@ -996,8 +1000,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "More than 395 thousand wild animals were rescued. Healthy animals (92%) were returned to the natural habitat, while the rest were sent to scientific institutions or breeding grounds for conservation purposes. " ';
-            document.getElementById("location-name").innerHTML = loco + ' Big Bend of the Xingu ';
-            document.getElementById("topic-name").innerHTML = ' Impacts on fauna ';
+            document.getElementById("location-name").innerHTML = loco + ' Xingu River ';
+            document.getElementById("topic-name").innerHTML = ' River Flow ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/legados-ambientais/fauna-resgate";
             break;
         case "ambiente2":
@@ -1006,8 +1010,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The environmental conditions around Volta Grande are kept stable by a "hydrograph of consensus" - a model that establishes the minimum river flow rate to keep the area environmentally healthy." ';
-            document.getElementById("location-name").innerHTML = loco + ' Big Bend of the Xingu ';
-            document.getElementById("topic-name").innerHTML = ' River flow ';
+            document.getElementById("location-name").innerHTML = loco + ' Xingu River ';
+            document.getElementById("topic-name").innerHTML = ' Flowa and Fauna ';
             document.getElementById("source_norte").href="https://www1.folha.uol.com.br/internacional/en/brazil/2018/09/nearing-completion-belo-monte-dam-receives-criticisms-from-all-sides.shtml";
             break;
         case "indios":
@@ -1016,8 +1020,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The evolution of the Belo Monte project ensured that no centimeter of the more than 5 million hectares occupied by 9 ethnic groups was flooded by the reservoirs of the Plant." ';
-            document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
-            document.getElementById("topic-name").innerHTML = ' Displacement of people ';
+            document.getElementById("location-name").innerHTML = loco + ' Indigenous Peoples ';
+            document.getElementById("topic-name").innerHTML = ' Relocation ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/povos-tradicionais/povos-tradicionais";
             break;
         case "indios2":
@@ -1026,8 +1030,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The indigenous communities actively participate in the discussions to define the actions that will be carried out in their territories. " ';
-            document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
-            document.getElementById("topic-name").innerHTML = ' Cooperation with local communities ';
+            document.getElementById("location-name").innerHTML = loco + ' Indigenous Peoples ';
+            document.getElementById("topic-name").innerHTML = ' Cooperation ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/povos-tradicionais/protagonismo-indigena";
             break;
         case "indios3":
@@ -1036,7 +1040,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The Basic Indigenous Environmental Component Project has been guaranteeing fundamental rights, promoting the quality of life and integrity of some 4,000 indigenous people." ';
-            document.getElementById("location-name").innerHTML = loco + ' Indigenous Territories ';
+            document.getElementById("location-name").innerHTML = loco + ' Indigenous Peoples ';
             document.getElementById("topic-name").innerHTML = ' Human rights ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/povos-tradicionais/povos-tradicionais";
             break;
