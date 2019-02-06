@@ -71,7 +71,7 @@ var controller = new ScrollMagic.Controller({
         reverse: true,
         triggerHook: 'onLeave'
         },
-        addIndicators: true
+        addIndicators: false
 });
 
 // build scene 01  LANDING goes up and...

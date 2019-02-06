@@ -193,7 +193,6 @@ a {
     pointer-events: none;
     max-height: 100%;
     overflow-y: scroll;
-    background-color: rgb(39, 45, 144);
 }
 .team {
     text-indent: 0px;
@@ -236,7 +235,7 @@ a {
     height: 100%;
     position: relative;
     z-index: 2;
-   }
+}
 
 #landing-text {
     position: absolute;
@@ -385,11 +384,11 @@ a {
 .outcome-a {
     grid-column: 3/10;
     padding: 2rem;
-    margin-top: 5vh;
+    margin-top: 12vh;
 }
 
 .outcome-text-container {
-    margin-top: 18vh;
+    margin-top: 15vh;
 }
 
 .outcome-text-container p {
@@ -413,7 +412,6 @@ a {
     grid-column-gap: 0rem;
     position: absolute;
     margin: 0 auto;
-    background-color: rgb(39, 45, 144);
 }
 
 .a {

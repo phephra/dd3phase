@@ -135,10 +135,17 @@ var controller = new ScrollMagic.Controller({
         reverse: true,
         triggerHook: 'onLeave'
         },
-        addIndicators: true
+        addIndicators: false
 });
 
-// build scene 01  - LANDING goes up and...
+// build scene 00  - LANDING goes up and...
+new ScrollMagic.Scene({
+    triggerElement: "#cover-image"
+})
+.setPin("#cover-image")
+.addTo(controller);
+
+// build scene 01  - LANDING IMAGE goes up and...
 new ScrollMagic.Scene({
         triggerElement: "#landing",
         duration: 400,
@@ -151,6 +158,18 @@ new ScrollMagic.Scene({
         ease: Linear.easeNone
     })
     .addTo(controller);
+
+// build scene 02  - LANDING goes up and...
+new ScrollMagic.Scene({
+    triggerElement: "#landing",
+    duration: 400,
+    offset: 0
+})
+.setTween("#cover-image", {
+    autoAlpha: 0,
+    ease: Linear.easeNone
+})
+.addTo(controller);
 
 // 03 - pinno introduzione
 new ScrollMagic.Scene({
