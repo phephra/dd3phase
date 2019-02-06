@@ -52,17 +52,15 @@ function showAbout() {
 
 
 //Overlays
+document.getElementById("gotIt").addEventListener("click", viaOverlay1);
+
 function viaOverlay1() {
     document.getElementsByClassName('overlay')[0].classList.add("hidden");
-    document.getElementById('tutorial').style.display = "block";
-    document.getElementById('counter').style.display = "block";
 }
 
 function vieniOverlay1() {
     closeNav();
     document.getElementsByClassName('overlay')[0].classList.remove("hidden");
-    document.getElementById('tutorial').style.display = "none";
-    document.getElementById('counter').style.display = "none";
 }
 
 function viaOverlay2() {
@@ -102,18 +100,18 @@ var fadeout_tween_brazil = TweenMax.to('#brazil_map', 0.4, {
 });
 
 //RIVER_MAP_FADE
-var fadein_tween_river = TweenMax.to('#river_map', 0.6, {
+var fadein_tween_river = TweenMax.to('#river_map', 0.4, {
     opacity: 1
 });
-var fadeout_tween_river = TweenMax.to('#river_map', 0.6, {
+var fadeout_tween_river = TweenMax.to('#river_map', 0.4, {
     opacity: 0
 });
 
 //BELOMONTE_INTRO_FADE
-var fadein_tween_belomonte = TweenMax.to('#belomonte_intro', 0.6, {
+var fadein_tween_belomonte = TweenMax.to('#belomonte_intro', 0.4, {
     opacity: 1
 });
-var fadeout_tween_belomonte = TweenMax.to('#belomonte_intro', 0.6, {
+var fadeout_tween_belomonte = TweenMax.to('#belomonte_intro', 0.4, {
     opacity: 0
 });
 
@@ -148,7 +146,7 @@ new ScrollMagic.Scene({
     })
     .setPin("#landing")
     .setTween("#landing-text", {
-        y: -300,
+        y: -100,
         autoAlpha: 0,
         ease: Linear.easeNone
     })
@@ -204,10 +202,21 @@ new ScrollMagic.Scene({
     .setPin("#river_map")
     .addTo(controller);
 
-//build scene 11 - Appare belomonte intro
+// build scene 09 - brazil disappears
+new ScrollMagic.Scene({
+    triggerElement: '#brazil-map-text',
+    duration: 200,
+})
+.setTween("#brazil-map", {
+    autoAlpha: 0,
+    ease: Linear.easeNone
+})
+.addTo(controller);
+
+//build scene 10 - Appare belomonte intro
 new ScrollMagic.Scene({
         triggerElement: '#brazil-map-text',
-        offset: 100,
+        offset: 300,
         duration: 200
     })
     .setTween(fadein_tween_belomonte)
@@ -260,7 +269,7 @@ var bounds = [
         [0, 0],
         [boundH, boundW]
     ];
-var image = L.imageOverlay('mappina.png', bounds).addTo(map);
+var image = L.imageOverlay('mappina.jpg', bounds).addTo(map);
 
 
 var ultima_mappa = L.imageOverlay('', bounds);
