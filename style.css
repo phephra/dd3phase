@@ -37,7 +37,8 @@ body {
     padding: 0;
     margin: 0;
     overscroll-behavior: none;
-    background-color: #060509;
+    /*background-color: #060509;*/
+    background-color: black;
     -webkit-font-smoothing: antialiased;
     height: 550vh;
 }
@@ -184,7 +185,7 @@ a {
     left: 0;
     padding-top: 15vh;
     opacity: 0;
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 1.5rem;
@@ -192,6 +193,7 @@ a {
     pointer-events: none;
     max-height: 100%;
     overflow-y: scroll;
+    background-color: rgb(39, 45, 144);
 }
 .team {
     text-indent: 0px;
@@ -234,7 +236,7 @@ a {
     height: 100%;
     position: relative;
     z-index: 2;
-}
+   }
 
 #landing-text {
     position: absolute;
@@ -270,27 +272,52 @@ a {
 #brazil_map {
     width: 100%;
     height: 100%;
-    background-image: url("Brazil_map.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 14;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.testo-brasile {
+    grid-column: 1;
+    z-index: 16;
+    margin-top: 20vh;
+    margin-left: 4vw;
+    margin-right: 2vw;
+}
+
+.mappa-brasile {
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+    background-image: url("/assets/img/brazil_map.png");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: top 8vh right 0px;
 }
 
 #river_map {
     width: 100%;
     height: 100%;
-    background-image: url("amazon_river.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 15;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.mappa-fiumi {
+    height: 100%;
+    background-image: url("/assets/img/amazon_river.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 8vh right 0px;
+    background-size: 150%;
+    grid-column: 2;
+    z-index: 16;
 }
 
 #belomonte_intro {
@@ -315,9 +342,9 @@ a {
 #brazil-map-text {
     position: absolute;
     top: 260%;
-    height: auto;
-    z-index: 28;
-    right: 2vw;
+    height: 20vh;
+    z-index: 0;
+    right: 0;
 }
 
 #xingu_map {
@@ -1092,6 +1119,7 @@ a {
 .left:hover {
     cursor: pointer;
     transform: rotate(-135deg) scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .right {
@@ -1117,6 +1145,7 @@ a {
 .right:hover {
     cursor: pointer;
     transform: rotate(45deg) scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 /*POPUP STYLES*/
@@ -1235,6 +1264,23 @@ a {
     } 
     .a {
         margin-top: 12vh;
-    }    
+    } 
+    .persone-text {
+        font-size: 3rem;
+    }
+    .outcome-number {
+        font-size: 3.5rem;
+    }
+    .bolso-text {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .about-text {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+    .outcome-text-container {
+        margin-top: 10vh;
+    }
 }
 

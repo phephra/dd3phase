@@ -1,8 +1,8 @@
 landing:
     immagine landing -
 brazil:
-    nuovo layout - 
-    riesportare immagini -
+    nuovo layout *
+    riesportare immagini *
 mappa: 
     titolo mappa *
     legende overlay -

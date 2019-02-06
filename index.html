@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="/assets/icons/favicon.png"/>
 </head>
 
 <body>
@@ -85,15 +86,18 @@
     </div>
 
     <div id="brazil_map">
+        <div class="testo-brasile">
+            <p class="title-text white">A Dammed Amazon</p>
+            <p class="bolso-text white">Amongst all the developing economies, <span class="bold">Brazil</span> has been heavily investing in constructing <span class="bold">hydroelectric plants</span> in the Amazon, to sustain its emerging economy. The Amazon Rainforest represents over half of the planet's remaining rainforests. Yet, its enormous biodiversity is being constantly stricken by the exploitation of natural resources for energy production. Plants, animals and local indigenous residents are the ones paying the price.</p>
+        </div>
+        <div class="mappa-brasile"></div>
     </div>
 
     <div id="river_map">
+        <div class="mappa-fiumi"></div>
     </div>
 
     <div id="brazil-map-text" class="text-container white">
-        <p class="title-text">News from the Amazon</p>
-        <p class="body-text">Brazil has been heavily investing in constructing hydroelectric plants in the Amazon, to sustain its emerging economy. The Amazon Rainforest represents over half of the planet's remaining rainforests. Yet, its enormous biodiversity is being constantly stricken by the exploitation of natural resources for energy production. Plants, animals and local indigenous residents are the ones paying the price.
-        </p>
     </div>
 
     <div id="belomonte_intro">
@@ -140,7 +144,7 @@
                     </div>
                 </div>
                 <div class="center">
-                    <button type="button" class="btn-1" id="gotIt" onclick="viaOverlay1()">Got it</button>
+                    <button type="button" class="btn-1" id="gotIt">Got it</button>
                 </div>
             </div>
         </div>
@@ -162,9 +166,6 @@
         </div>
         <span class="left" onclick="indietro()"></span>
         <span class="right" onclick="avanti()"></span>
-        <div id="titolone-mappona">
-            <p class="map-title-text white"><i class="fas fa-map-marker-alt" style="font-size:1rem;color:#ffffff;"></i> Belo Monte Area</p>
-        </div>
         <div id="map-legenda"></div>
         <button id="hai_finito" type="button" class="btn-1" onclick="contaLetture()">Proceed to decision</button>
         <div id="mySidenav" class="sidenav">
