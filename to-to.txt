@@ -7,3 +7,5 @@
 - bordi nella mappa *
 
 - LEVARE DAL CODICE LE ROBE NON USATE
+
+- 
