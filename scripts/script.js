@@ -631,7 +631,7 @@ markerID_altamira3.addEventListener('mouseleave', function (e) {
 });
 
 markerID_diga.addEventListener('mouseenter', function (e) {
-    div_popup.innerHTML = '<p class="titolo_popup">UHE Belo Monte, Main Site</p><p class="testo_popup">Belo Monte is the main powerhouse of the hydroelectric complex built by Norte Energia on the Xingu River. </p><p class="hint">Click to inspect</p>';
+    div_popup.innerHTML = '<p class="titolo_popup">UHE Belo Monte, Main Site - Electric Coverage</p><p class="testo_popup">Belo Monte is the main powerhouse of the hydroelectric complex built by Norte Energia on the Xingu River. </p><p class="hint">Click to inspect</p>';
     div_popup.style.opacity = 1;
 });
 
@@ -647,7 +647,7 @@ markerID_diga.addEventListener('mouseleave', function (e) {
 });
 
 markerID_diga2.addEventListener('mouseenter', function (e) {
-    div_popup.innerHTML = '<p class="titolo_popup">UHE Belo Monte, Pimental Site</p><p class="testo_popup">The Pimental Site is the auxiliary powerhouse of the complex built by Norte Energia on the Xingu River.</p><p class="hint">Click to inspect</p>';
+    div_popup.innerHTML = '<p class="titolo_popup">UHE Belo Monte, Pimental Site - Efficiency</p><p class="testo_popup">The Pimental Site is the auxiliary powerhouse of the complex built by Norte Energia on the Xingu River.</p><p class="hint">Click to inspect</p>';
     div_popup.style.opacity = 1;
 });
 
@@ -1063,8 +1063,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "60 million people are going to be reached." ';
-            document.getElementById("location-name").innerHTML = loco + ' UHE Belo Monte ';
-            document.getElementById("topic-name").innerHTML = ' Main Site ';
+            document.getElementById("location-name").innerHTML = loco + ' UHE Belo Monte, Main Site ';
+            document.getElementById("topic-name").innerHTML = ' Electric Coverage ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/imprensa/releases/na-reta-final-100282";
             break;
         case "diga2":
@@ -1073,8 +1073,8 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte confers greater security to the Electric System, due to the better use of the hydrological differences of flood and drought between the different regions of Brazil, which contribute to the Brazilian energy matrix." ';
-            document.getElementById("location-name").innerHTML = loco + ' UHE Belo Monte ';
-            document.getElementById("topic-name").innerHTML = ' Pimental Site ';
+            document.getElementById("location-name").innerHTML = loco + ' UHE Belo Monte, Pimental Site ';
+            document.getElementById("topic-name").innerHTML = ' Efficiency ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/uhe-belo-monte/geracao-e-operacao";
             break;
         case "ambiente":
@@ -1084,7 +1084,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "More than 395 thousand wild animals were rescued. Healthy animals (92%) were returned to the natural habitat, while the rest were sent to scientific institutions or breeding grounds for conservation purposes. " ';
             document.getElementById("location-name").innerHTML = loco + ' Xingu River ';
-            document.getElementById("topic-name").innerHTML = ' River Flow ';
+            document.getElementById("topic-name").innerHTML = ' Flora and Fauna ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/legados-ambientais/fauna-resgate";
             break;
         case "ambiente2":
@@ -1094,7 +1094,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The environmental conditions around Volta Grande are kept stable by a "hydrograph of consensus" - a model that establishes the minimum river flow rate to keep the area environmentally healthy." ';
             document.getElementById("location-name").innerHTML = loco + ' Xingu River ';
-            document.getElementById("topic-name").innerHTML = ' Flowa and Fauna ';
+            document.getElementById("topic-name").innerHTML = ' River Flow ';
             document.getElementById("source_norte").href="https://www1.folha.uol.com.br/internacional/en/brazil/2018/09/nearing-completion-belo-monte-dam-receives-criticisms-from-all-sides.shtml";
             break;
         case "indios":
@@ -1124,7 +1124,7 @@ function unveilStatements(switchIcona) {
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The Basic Indigenous Environmental Component Project has been guaranteeing fundamental rights, promoting the quality of life and integrity of some 4,000 indigenous people." ';
             document.getElementById("location-name").innerHTML = loco + ' Indigenous Peoples ';
-            document.getElementById("topic-name").innerHTML = ' Human rights ';
+            document.getElementById("topic-name").innerHTML = ' Human Rights ';
             document.getElementById("source_norte").href="https://www.norteenergiasa.com.br/pt-br/sustentabilidade/povos-tradicionais/povos-tradicionais";
             break;
         default:
@@ -1159,14 +1159,14 @@ function unveilVersions(switchIcona) {
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_antunes.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Walter Coronado Antunes";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Former Secretary of the Environment of the state of São Paulo";
-            document.getElementsByClassName("statement-text")[1].innerHTML = ' "Belo Monte Dam Complex is one of the least efficient hydro-power projects in the history of Brazil." ';
+            document.getElementsByClassName("statement-text")[1].innerHTML = ' "Only 70% of the energy will go to the Brazilian population. The remaining 30% will be sold to power mining and industrial companies." ';
             document.getElementById("source_other").href="https://en.wikipedia.org/wiki/Belo_Monte_Dam#cite_note-antunes-50";
             break;
         case "diga2":
             document.getElementsByClassName("actor-icon")[1].src = "/assets/icons/icona_amazonwatch.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Amazon Watch";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
-            document.getElementsByClassName("statement-text")[1].innerHTML = ' "Only 70% of the energy will go to the Brazilian population. The remaining 30% will be sold to power mining and industrial companies." ';
+            document.getElementsByClassName("statement-text")[1].innerHTML = ' "Belo Monte Dam Complex is one of the least efficient hydro-power projects in the history of Brazil." ';
             document.getElementById("source_other").href="https://amazonwatch.org/work/belo-monte-facts";
             break;
         case "ambiente":
