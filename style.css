@@ -286,7 +286,7 @@ a {
     height: 100%;
     width: 100%;
     grid-column: 2;
-    background-image: url("/assets/img/brazil_map.png");
+    background-image: url("./assets/img/brazil_map.png");
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: top 8vh right 0px;
@@ -305,7 +305,7 @@ a {
 
 .mappa-fiumi {
     height: 100%;
-    background-image: url("/assets/img/amazon_river.png");
+    background-image: url("./assets/img/amazon_river.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top 8vh right 0px;
@@ -429,7 +429,7 @@ a {
     position: absolute;
     width: 50vw;
     height: 100%;
-    background-image: url("/assets/img/bolsy.png");
+    background-image: url("./assets/img/bolsy.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -825,7 +825,7 @@ a {
     bottom: 3vh;
     height: 27vh;
     width: 11vw;
-    background-image: url("assets/img/brazil_detail.png");
+    background-image: url("./assets/img/brazil_detail.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
