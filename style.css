@@ -4,22 +4,22 @@
 
 @font-face {
     font-family: "IBM Plex Sans Regular";
-    src: url("/assets/fonts/IBMPlexSans-Regular.otf");
+    src: url("./assets/fonts/IBMPlexSans-Regular.otf");
 }
 
 @font-face {
     font-family: "IBM Plex Sans Medium";
-    src: url("/assets/fonts/IBMPlexSans-Medium.otf");
+    src: url("./assets/fonts/IBMPlexSans-Medium.otf");
 }
 
 @font-face {
     font-family: "IBM Plex Sans SemiBold";
-    src: url("/assets/fonts/IBMPlexSans-SemiBold.otf");
+    src: url("./assets/fonts/IBMPlexSans-SemiBold.otf");
 }
 
 @font-face {
     font-family: "IBM Plex Sans Bold";
-    src: url("/assets/fonts/IBMPlexSans-Bold.otf");
+    src: url("./assets/fonts/IBMPlexSans-Bold.otf");
 }
 
 
