@@ -365,6 +365,7 @@ a {
 }
 
 #legenda_overlay {
+    display: none;
     position: absolute;
     bottom: 3vh;
     left: 2vw;
@@ -601,6 +602,14 @@ a {
 
 .hidden {
     display: none;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.matte {
+    opacity: 1;
 }
 
 #empty {
@@ -912,10 +921,6 @@ a {
 
 /*TEXT STYLES*/
 
-.hint {
-    font-size: 0.8rem;
-}
-
 .bold {
     font-family: "IBM Plex Serif Bold", serif;
     font-weight: 700;
@@ -1155,43 +1160,42 @@ a {
 
 /*POPUP STYLES*/
 
-.custom-popup .leaflet-popup-content-wrapper {
+#popup_container {
+    opacity: 0;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-    border-radius: 0px;
+    position: absolute;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     max-width: 22vw;
-    height: auto;
-    font-family: "IBM Plex Sans Regular", serif;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    z-index: 33;
-}
-
-.custom-popup .leaflet-popup-content-wrapper a {
-    color: rgba(255, 255, 255, 0.1);
-}
-
-.custom-popup .leaflet-popup-tip-container {
-    width: 30px;
-    height: 15px;
-}
-
-.custom-popup .leaflet-popup-tip {
-    background: transparent;
-    border: none;
-    box-shadow: none;
+    pointer-events: none;
 }
 
 .titolo_popup {
     font-size: 1.4rem;
     font-family: "IBM Plex Serif Bold", serif;
     border-bottom: 1px solid #ffffff;
-    padding-bottom: 0.5rem;
+    color: white;
 }
+
+.testo_popup {
+    font-size: 1.4rem;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0.5rem;
+    font-family: "IBM Plex Sans Regular", sans-serif;
+    color: white;
+}
+
+.hint {
+    font-family: "IBM Plex Sans Regular", sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+
 
 /*COLORI*/
 .white {

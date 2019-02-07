@@ -314,10 +314,6 @@ map.doubleClickZoom.disable();
 
 //ICONE
 
-var popupAnchorX = 200;
-var popupAnchorY = 0;
-var popupAnchorY_basso = 260;
-
 var iconAnchorX = 30;
 var iconAnchorY = 30;
 
@@ -330,220 +326,182 @@ var iconScaleBig = 80;
 var icona_altamira = L.icon({
     iconUrl: '/assets/icons/icona_altamira.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira_I = L.icon({
     iconUrl: '/assets/icons/icona_altamira_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira_now = L.icon({
     iconUrl: '/assets/icons/icona_altamira_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_altamira2 = L.icon({
     iconUrl: '/assets/icons/icona_altamira.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira2_I = L.icon({
     iconUrl: '/assets/icons/icona_altamira_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira2_now = L.icon({
     iconUrl: '/assets/icons/icona_altamira_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_altamira3 = L.icon({
     iconUrl: '/assets/icons/icona_altamira.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira3_I = L.icon({
     iconUrl: '/assets/icons/icona_altamira_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira3_now = L.icon({
     iconUrl: '/assets/icons/icona_altamira_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_diga = L.icon({
     iconUrl: '/assets/icons/icona_diga.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY_basso]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga_I = L.icon({
     iconUrl: '/assets/icons/icona_diga_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY_basso]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga_now = L.icon({
     iconUrl: '/assets/icons/icona_diga_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY_basso]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_diga2 = L.icon({
     iconUrl: '/assets/icons/icona_diga.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga2_I = L.icon({
     iconUrl: '/assets/icons/icona_diga_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga2_now = L.icon({
     iconUrl: '/assets/icons/icona_diga_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_ambiente = L.icon({
     iconUrl: '/assets/icons/icona_ambiente.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente2 = L.icon({
     iconUrl: '/assets/icons/icona_ambiente.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente_I = L.icon({
     iconUrl: '/assets/icons/icona_ambiente_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente2_I = L.icon({
     iconUrl: '/assets/icons/icona_ambiente_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente_now = L.icon({
     iconUrl: '/assets/icons/icona_ambiente_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_ambiente2_now = L.icon({
     iconUrl: '/assets/icons/icona_ambiente_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios = L.icon({
     iconUrl: '/assets/icons/icona_indios.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios2 = L.icon({
     iconUrl: '/assets/icons/icona_indios.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios3 = L.icon({
     iconUrl: '/assets/icons/icona_indios.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios_I = L.icon({
     iconUrl: '/assets/icons/icona_indios_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios2_I = L.icon({
     iconUrl: '/assets/icons/icona_indios_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios3_I = L.icon({
     iconUrl: '/assets/icons/icona_indios_I.png',
     iconSize: [iconScale],
-    iconAnchor: [iconAnchorX, iconAnchorY],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios_now = L.icon({
     iconUrl: '/assets/icons/icona_indios_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios2_now = L.icon({
     iconUrl: '/assets/icons/icona_indios_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios3_now = L.icon({
     iconUrl: '/assets/icons/icona_indios_now.png',
     iconSize: [iconScaleBig],
-    iconAnchor: [iconAnchorXBig, iconAnchorYBig],
-    popupAnchor: [popupAnchorX, popupAnchorY]
+    iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
-
-
-// specify popup options 
-var customOptions = {
-    'maxWidth': '500',
-    'className': 'custom-popup',
-    'closeButton': false
-}
 
 //MARKERS
 var altamira = L.latLng([(boundH/4)*2.62, (boundW/12)*3.1]);
@@ -559,45 +517,45 @@ var indios3 = L.latLng([(boundH/4)*0.6, (boundW/12)*7.2]);
 
 var marker_altamira = L.marker(altamira, {
     icon: icona_altamira,
-}).addTo(map).bindPopup('<p class="titolo_popup">Altamira - Hospitals</p><p>Sanitation is one of the main problems addressed by families living in the city of Altamira.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 
 var marker_altamira2 = L.marker(altamira2, {
     icon: icona_altamira2
-}).addTo(map).bindPopup('<p class="titolo_popup">Altamira - Sewers</p><p>The construction works for the sewers and the water supply system have been going on in Altamira for a long time, but their service is still cited as problematic.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 var marker_altamira3 = L.marker(altamira3, {
     icon: icona_altamira3
-}).addTo(map).bindPopup('<p class="titolo_popup">Altamira - Housing</p><p>The dramatic increase of the population of Altamira in the last years is linked to the presence of the workers in the dam construction and of thousands of indigenous people displaced.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 
 var marker_diga = L.marker(diga, {
     icon: icona_diga
-}).addTo(map).bindPopup('<p class="titolo_popup">UHE Belo Monte, Main Site</p><p>Belo Monte is the main powerhouse of the hydroelectric complex built by Norte Energia on the Xingu River. </p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 var marker_diga2 = L.marker(diga2, {
     icon: icona_diga2
-}).addTo(map).bindPopup('<p class="titolo_popup">UHE Belo Monte, Pimental Site</p><p>The Pimental Site is the auxiliary powerhouse of the complex built by Norte Energia on the Xingu River.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 var marker_ambiente = L.marker(ambiente, {
     icon: icona_ambiente
-}).addTo(map).bindPopup('<p class="titolo_popup">Xingu River - Flora and Fauna</p><p>The flooding of a previously wooded area and the desiccation of a part of the river caused deadly consequences on the fauna and flora of the Amazon.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 var marker_ambiente2 = L.marker(ambiente2, {
     icon: icona_ambiente2
-}).addTo(map).bindPopup('<p class="titolo_popup">Xingu River - River Flow</p><p>The building of the dam meant the diversion of the river flow, to obtain a more controllable water flow in the turbines.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 var marker_indios = L.marker(indios, {
     icon: icona_indios
-}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples - Relocation</p><p>The territories under the influence of the dam overlap with numerous indian reserves, whose inhabitants had to be relocated.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 var marker_indios2 = L.marker(indios2, {
     icon: icona_indios2
-}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples - Cooperation</p><p>Despite the attempt for dialogue and cooperation, the feud between the construction companies and the Indios has been going on since the first project of the dam.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 var marker_indios3 = L.marker(indios3, {
     icon: icona_indios3
-}).addTo(map).bindPopup('<p class="titolo_popup">Indigenous Peoples - Human Rights </p><p>The degradation of the quality of life for the natives has been one of the main topics of protest for the dam detractors.</p><p class="hint">Click to inspect</p>', customOptions);
+}).addTo(map)
 
 
 //DO UN id AI MARKER
@@ -614,83 +572,180 @@ marker_indios2._icon.id = "markerID_indios2";
 marker_indios3._icon.id = "markerID_indios3";
 
 
+let div_popup = document.getElementById('popup_container');
+var over_left;
+var over_top;
 
 //APRO I POPUP AL MOUSEOVER
-marker_altamira.on('mouseover', function (e) {
-    this.openPopup();
-});
-marker_altamira.on('mouseout', function (e) {
-    this.closePopup();
-});
-marker_altamira2.on('mouseover', function (e) {
-    this.openPopup();
+
+markerID_altamira.addEventListener('mouseenter', function (e) {
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
+    div_popup.innerHTML = '<p class="titolo_popup">Altamira - Hospitals</p><p class="testo_popup">Sanitation is one of the main problems addressed by families living in the city of Altamira.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
 });
 
-marker_altamira2.on('mouseout', function (e) {
-    this.closePopup();
+markerID_altamira.addEventListener('mousemove', function (e) {
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
 });
 
-marker_altamira3.on('mouseover', function (e) {
-    this.openPopup();
+markerID_altamira.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
 });
 
-marker_altamira3.on('mouseout', function (e) {
-    this.closePopup();
+markerID_altamira2.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">Altamira - Sewers</p><p class="testo_popup">The construction works for the sewers and the water supply system have been going on in Altamira for a long time, but their service is still cited as problematic.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
 });
 
-marker_diga.on('mouseover', function (e) {
-    this.openPopup();
+markerID_altamira2.addEventListener('mousemove', function (e) {
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
 });
 
-marker_diga.on('mouseout', function (e) {
-    this.closePopup();
+markerID_altamira2.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
 });
 
-marker_diga2.on('mouseover', function (e) {
-    this.openPopup();
+markerID_altamira3.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">Altamira - Housing</p><p class="testo_popup">The dramatic increase of the population of Altamira in the last years is linked to the presence of the workers in the dam construction and of thousands of indigenous people displaced.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
 });
 
-marker_diga2.on('mouseout', function (e) {
-    this.closePopup();
+markerID_altamira3.addEventListener('mousemove', function (e) {
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
 });
 
-marker_ambiente.on('mouseover', function (e) {
-    this.openPopup();
+markerID_altamira3.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
 });
 
-marker_ambiente.on('mouseout', function (e) {
-    this.closePopup();
+markerID_diga.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">UHE Belo Monte, Main Site</p><p class="testo_popup">Belo Monte is the main powerhouse of the hydroelectric complex built by Norte Energia on the Xingu River. </p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
 });
 
-marker_ambiente2.on('mouseover', function (e) {
-    this.openPopup();
+markerID_diga.addEventListener('mousemove', function (e) {
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
 });
 
-marker_ambiente2.on('mouseout', function (e) {
-    this.closePopup();
+markerID_diga.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
 });
 
-marker_indios.on('mouseover', function (e) {
-    this.openPopup();
+markerID_diga2.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">UHE Belo Monte, Pimental Site</p><p class="testo_popup">The Pimental Site is the auxiliary powerhouse of the complex built by Norte Energia on the Xingu River.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
 });
 
-marker_indios.on('mouseout', function (e) {
-    this.closePopup();
+markerID_diga2.addEventListener('mousemove', function (e) {
+    var altezza = div_popup.clientHeight;
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY - altezza + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
 });
 
-marker_indios2.on('mouseover', function (e) {
-    this.openPopup();
+markerID_diga2.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
 });
 
-marker_indios2.on('mouseout', function (e) {
-    this.closePopup();
+markerID_ambiente.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">Xingu River - Flora and Fauna</p><p class="testo_popup">The flooding of a previously wooded area and the desiccation of a part of the river caused deadly consequences on the fauna and flora of the Amazon.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
 });
 
-marker_indios3.on('mouseover', function (e) {
-    this.openPopup();
+markerID_ambiente.addEventListener('mousemove', function (e) {
+    var altezza = div_popup.clientHeight;
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY - altezza + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
 });
-marker_indios3.on('mouseout', function (e) {
-    this.closePopup();
+
+markerID_ambiente.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
+});
+
+markerID_ambiente2.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">Xingu River - River Flow</p><p class="testo_popup">The building of the dam meant the diversion of the river flow, to obtain a more controllable water flow in the turbines.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
+});
+
+markerID_ambiente2.addEventListener('mousemove', function (e) {
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
+});
+
+markerID_ambiente2.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
+});
+
+markerID_indios.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">Indigenous Peoples - Relocation</p><p class="testo_popup">The territories under the influence of the dam overlap with numerous indian reserves, whose inhabitants had to be relocated.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
+});
+
+markerID_indios.addEventListener('mousemove', function (e) {
+    var altezza = div_popup.clientHeight;
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY - altezza + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
+});
+
+markerID_indios.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
+});
+
+markerID_indios2.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">Indigenous Peoples - Cooperation</p><p class="testo_popup">Despite the attempt for dialogue and cooperation, the feud between the construction companies and the Indios has been going on since the first project of the dam.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
+});
+
+markerID_indios2.addEventListener('mousemove', function (e) {
+    var altezza = div_popup.clientHeight;
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY - altezza + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
+});
+
+
+markerID_indios2.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
+});
+
+markerID_indios3.addEventListener('mouseenter', function (e) {
+    div_popup.innerHTML = '<p class="titolo_popup">Indigenous Peoples - Human Rights </p><p class="testo_popup">The degradation of the quality of life for the natives has been one of the main topics of protest for the dam detractors.</p><p class="hint">Click to inspect</p>';
+    div_popup.style.opacity = 1;
+});
+
+markerID_indios3.addEventListener('mousemove', function (e) {
+    var altezza = div_popup.clientHeight;
+    over_left  = e.clientX  + "px";
+    over_top  = e.clientY - altezza + "px";
+    div_popup.style.left = over_left;
+    div_popup.style.top = over_top;
+});
+
+markerID_indios3.addEventListener('mouseleave', function (e) {
+    div_popup.style.opacity = 0;
 });
 
 
