@@ -277,181 +277,181 @@ var iconScale = 60;
 var iconScaleBig = 80;
 
 var icona_altamira = L.icon({
-    iconUrl: './assets/icons/icona_altamira.png',
+    iconUrl: '../assets/Icons/icona_altamira.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira_I = L.icon({
-    iconUrl: './assets/icons/icona_altamira_I.png',
+    iconUrl: '../assets/Icons/icona_altamira_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira_now = L.icon({
-    iconUrl: './assets/icons/icona_altamira_now.png',
+    iconUrl: '../assets/Icons/icona_altamira_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_altamira2 = L.icon({
-    iconUrl: './assets/icons/icona_altamira.png',
+    iconUrl: '../assets/Icons/icona_altamira.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira2_I = L.icon({
-    iconUrl: './assets/icons/icona_altamira_I.png',
+    iconUrl: '../assets/Icons/icona_altamira_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira2_now = L.icon({
-    iconUrl: './assets/icons/icona_altamira_now.png',
+    iconUrl: '../assets/Icons/icona_altamira_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_altamira3 = L.icon({
-    iconUrl: './assets/icons/icona_altamira.png',
+    iconUrl: '../assets/Icons/icona_altamira.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira3_I = L.icon({
-    iconUrl: './assets/icons/icona_altamira_I.png',
+    iconUrl: '../assets/Icons/icona_altamira_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira3_now = L.icon({
-    iconUrl: './assets/icons/icona_altamira_now.png',
+    iconUrl: '../assets/Icons/icona_altamira_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_diga = L.icon({
-    iconUrl: './assets/icons/icona_diga.png',
+    iconUrl: '../assets/Icons/icona_diga.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga_I = L.icon({
-    iconUrl: './assets/icons/icona_diga_I.png',
+    iconUrl: '../assets/Icons/icona_diga_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga_now = L.icon({
-    iconUrl: './assets/icons/icona_diga_now.png',
+    iconUrl: '../assets/Icons/icona_diga_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_diga2 = L.icon({
-    iconUrl: './assets/icons/icona_diga.png',
+    iconUrl: '../assets/Icons/icona_diga.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga2_I = L.icon({
-    iconUrl: './assets/icons/icona_diga_I.png',
+    iconUrl: '../assets/Icons/icona_diga_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga2_now = L.icon({
-    iconUrl: './assets/icons/icona_diga_now.png',
+    iconUrl: '../assets/Icons/icona_diga_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_ambiente = L.icon({
-    iconUrl: './assets/icons/icona_ambiente.png',
+    iconUrl: '../assets/Icons/icona_ambiente.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente2 = L.icon({
-    iconUrl: './assets/icons/icona_ambiente.png',
+    iconUrl: '../assets/Icons/icona_ambiente.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente_I = L.icon({
-    iconUrl: './assets/icons/icona_ambiente_I.png',
+    iconUrl: '../assets/Icons/icona_ambiente_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente2_I = L.icon({
-    iconUrl: './assets/icons/icona_ambiente_I.png',
+    iconUrl: '../assets/Icons/icona_ambiente_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente_now = L.icon({
-    iconUrl: './assets/icons/icona_ambiente_now.png',
+    iconUrl: '../assets/Icons/icona_ambiente_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_ambiente2_now = L.icon({
-    iconUrl: './assets/icons/icona_ambiente_now.png',
+    iconUrl: '../assets/Icons/icona_ambiente_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios = L.icon({
-    iconUrl: './assets/icons/icona_indios.png',
+    iconUrl: '../assets/Icons/icona_indios.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios2 = L.icon({
-    iconUrl: './assets/icons/icona_indios.png',
+    iconUrl: '../assets/Icons/icona_indios.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios3 = L.icon({
-    iconUrl: './assets/icons/icona_indios.png',
+    iconUrl: '../assets/Icons/icona_indios.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios_I = L.icon({
-    iconUrl: './assets/icons/icona_indios_I.png',
+    iconUrl: '../assets/Icons/icona_indios_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios2_I = L.icon({
-    iconUrl: './assets/icons/icona_indios_I.png',
+    iconUrl: '../assets/Icons/icona_indios_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios3_I = L.icon({
-    iconUrl: './assets/icons/icona_indios_I.png',
+    iconUrl: '../assets/Icons/icona_indios_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios_now = L.icon({
-    iconUrl: './assets/icons/icona_indios_now.png',
+    iconUrl: '../assets/Icons/icona_indios_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios2_now = L.icon({
-    iconUrl: './assets/icons/icona_indios_now.png',
+    iconUrl: '../assets/Icons/icona_indios_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios3_now = L.icon({
-    iconUrl: './assets/icons/icona_indios_now.png',
+    iconUrl: '../assets/Icons/icona_indios_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
@@ -1123,70 +1123,70 @@ function unveilStatements(switchIcona) {
 function unveilVersions(switchIcona) {
     switch (switchIcona) {
         case "altamira":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_internetpress.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_internetpress.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Internet Press Service";
             document.getElementsByClassName("actor-type")[1].innerHTML = "News Agency";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The hospital was already there, and it had shut its doors in April 2014, leaving the 22,000 people of Brasil Novo without a hospital." ';
             document.getElementById("source_other").href="http://www.ipsnews.net/2015/06/amazon-dam-also-brings-health-infrastructure-for-local-population/";
             break;
         case "altamira2":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_mongabay.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_mongabay.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Mongabay";
             document.getElementsByClassName("actor-type")[1].innerHTML = "News";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Over the past year, Norte Energia´s license has been suspended because of its failure to fulfill the building of an adequate sewer and water system for the city of Altamira." ';
             document.getElementById("source_other").href="https://news.mongabay.com/2017/09/belo-monte-dam-installation-license-suspended-housing-inadequacy-cited/";
             break;
         case "altamira3":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_ministerio.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_ministerio.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Ministério Público Federal";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Brazilian Ministry";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The houses proposed by Norte Energia violated the Altamira municipality Construction Code." ';
             document.getElementById("source_other").href="https://news.mongabay.com/2017/09/belo-monte-dam-installation-license-suspended-housing-inadequacy-cited/";
             break;
         case "diga":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_antunes.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_antunes.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Walter Coronado Antunes";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Former Secretary of the Environment of the state of São Paulo";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Only 70% of the energy will go to the Brazilian population. The remaining 30% will be sold to power mining and industrial companies." ';
             document.getElementById("source_other").href="https://en.wikipedia.org/wiki/Belo_Monte_Dam#cite_note-antunes-50";
             break;
         case "diga2":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_amazonwatch.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_amazonwatch.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Amazon Watch";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Belo Monte Dam Complex is one of the least efficient hydro-power projects in the history of Brazil." ';
             document.getElementById("source_other").href="https://amazonwatch.org/work/belo-monte-facts";
             break;
         case "ambiente":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_survival.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_survival.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Survival International";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The proposed flow through the Volta Grande meant the river will not be capable of maintaining species diversity, risking extinction of hundreds of species." ';
             document.getElementById("source_other").href="http://assets.survivalinternational.org/documents/266/Experts_Panel_BeloMonte_summary_oct2009.pdf";
             break;
         case "ambiente2":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_amazonconservation.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_amazonconservation.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Amazon Conservation";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "A canal diverts much (up to 80%) of the river’s flow from the main reservoir to the canal reservoir, which feeds the turbines generating the electricity. As a result, downstream of the main dam is left with a much reduced flow (20%) for a stretch of 100 km." ';
             document.getElementById("source_other").href="https://maaproject.org/2017/belo-monte/";
             break;
         case "indios":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_internationalrivers.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_internationalrivers.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "International Rivers";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "20,000 people were displaced by the dam." ';
             document.getElementById("source_other").href="https://www.internationalrivers.org/campaigns/belo-monte-dam";
             break;
         case "indios2":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_openglobal.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_openglobal.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Open Global Rights";
             document.getElementsByClassName("actor-type")[1].innerHTML = "NGO";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "The meetings held to explain the impacts of the dam were highly inadequate—indigenous people had two days to review 26,000 pages of the technical study, with no interpreters." ';
             document.getElementById("source_other").href="https://www.openglobalrights.org/how-not-to-produce-energy-lessons-from-brazils-belo-monte-dam/";
             break;
         case "indios3":
-            document.getElementsByClassName("actor-icon")[1].src = "./assets/icons/icona_ministerio.png";
+            document.getElementsByClassName("actor-icon")[1].src = "../assets/Icons/icona_ministerio.png";
             document.getElementsByClassName("actor-name")[1].innerHTML = "Ministério Público Federal";
             document.getElementsByClassName("actor-type")[1].innerHTML = "Brazilian Ministry";
             document.getElementsByClassName("statement-text")[1].innerHTML = ' "Norte Energia violated 55 different obligations it had agreed to in order to guarantee the survival of indigenous groups, farmers and fishermen whose homes and lands will be lost." ';
