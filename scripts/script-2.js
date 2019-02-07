@@ -8,9 +8,15 @@ $(document).ready(function () {
         hamburger.toggleClass('active');
         return false;
     });
+    $('#about-2').click(function (){
+        hamburger.toggleClass('active');
+        return false;
+    })
 });
 
 //MENUBAR
+
+var menuState;
 
 document.getElementById("hamburger-icon").addEventListener("click", toggleNav);
 document.getElementById("about").addEventListener("click", showAbout);
@@ -38,6 +44,7 @@ function closeMenu() {
 }
 
 function showAbout() {
+    openMenu();
     document.getElementsByClassName("menu-links")[0].style.opacity = "0";
     document.getElementsByClassName("menu-links")[0].style.pointerEvents = "none";
     document.getElementsByClassName("about-container")[0].style.opacity = "1";
