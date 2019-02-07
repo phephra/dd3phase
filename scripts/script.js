@@ -276,182 +276,184 @@ var iconAnchorYBig = 40;
 var iconScale = 60;
 var iconScaleBig = 80;
 
+var iconsPath = 'assets/Icons/';
+
 var icona_altamira = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira.png',
+    iconUrl: iconsPath + 'icona_altamira.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira_I = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira_I.png',
+    iconUrl: iconsPath + 'icona_altamira_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira_now = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira_now.png',
+    iconUrl: iconsPath + 'icona_altamira_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_altamira2 = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira.png',
+    iconUrl: iconsPath + 'icona_altamira.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira2_I = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira_I.png',
+    iconUrl: iconsPath + 'icona_altamira_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira2_now = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira_now.png',
+    iconUrl: iconsPath + 'icona_altamira_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_altamira3 = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira.png',
+    iconUrl: iconsPath + 'icona_altamira.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira3_I = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira_I.png',
+    iconUrl: iconsPath + 'icona_altamira_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_altamira3_now = L.icon({
-    iconUrl: '../assets/Icons/icona_altamira_now.png',
+    iconUrl: iconsPath + 'icona_altamira_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_diga = L.icon({
-    iconUrl: '../assets/Icons/icona_diga.png',
+    iconUrl: iconsPath + 'icona_diga.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga_I = L.icon({
-    iconUrl: '../assets/Icons/icona_diga_I.png',
+    iconUrl: iconsPath + 'icona_diga_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga_now = L.icon({
-    iconUrl: '../assets/Icons/icona_diga_now.png',
+    iconUrl: iconsPath + 'icona_diga_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_diga2 = L.icon({
-    iconUrl: '../assets/Icons/icona_diga.png',
+    iconUrl: iconsPath + 'icona_diga.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga2_I = L.icon({
-    iconUrl: '../assets/Icons/icona_diga_I.png',
+    iconUrl: iconsPath + 'icona_diga_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_diga2_now = L.icon({
-    iconUrl: '../assets/Icons/icona_diga_now.png',
+    iconUrl: iconsPath + 'icona_diga_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_ambiente = L.icon({
-    iconUrl: '../assets/Icons/icona_ambiente.png',
+    iconUrl: iconsPath + 'icona_ambiente.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente2 = L.icon({
-    iconUrl: '../assets/Icons/icona_ambiente.png',
+    iconUrl: iconsPath + 'icona_ambiente.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente_I = L.icon({
-    iconUrl: '../assets/Icons/icona_ambiente_I.png',
+    iconUrl: iconsPath + 'icona_ambiente_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente2_I = L.icon({
-    iconUrl: '../assets/Icons/icona_ambiente_I.png',
+    iconUrl: iconsPath + 'icona_ambiente_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_ambiente_now = L.icon({
-    iconUrl: '../assets/Icons/icona_ambiente_now.png',
+    iconUrl: iconsPath + 'icona_ambiente_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_ambiente2_now = L.icon({
-    iconUrl: '../assets/Icons/icona_ambiente_now.png',
+    iconUrl: iconsPath + 'icona_ambiente_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios = L.icon({
-    iconUrl: '../assets/Icons/icona_indios.png',
+    iconUrl: iconsPath + 'icona_indios.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios2 = L.icon({
-    iconUrl: '../assets/Icons/icona_indios.png',
+    iconUrl: iconsPath + 'icona_indios.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios3 = L.icon({
-    iconUrl: '../assets/Icons/icona_indios.png',
+    iconUrl: iconsPath + 'icona_indios.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios_I = L.icon({
-    iconUrl: '../assets/Icons/icona_indios_I.png',
+    iconUrl: iconsPath + 'icona_indios_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios2_I = L.icon({
-    iconUrl: '../assets/Icons/icona_indios_I.png',
+    iconUrl: iconsPath + 'icona_indios_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios3_I = L.icon({
-    iconUrl: '../assets/Icons/icona_indios_I.png',
+    iconUrl: iconsPath + 'icona_indios_I.png',
     iconSize: [iconScale],
     iconAnchor: [iconAnchorX, iconAnchorY]
 });
 
 var icona_indios_now = L.icon({
-    iconUrl: '../assets/Icons/icona_indios_now.png',
+    iconUrl: iconsPath + 'icona_indios_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios2_now = L.icon({
-    iconUrl: '../assets/Icons/icona_indios_now.png',
+    iconUrl: iconsPath + 'icona_indios_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
 
 var icona_indios3_now = L.icon({
-    iconUrl: '../assets/Icons/icona_indios_now.png',
+    iconUrl: iconsPath + 'icona_indios_now.png',
     iconSize: [iconScaleBig],
     iconAnchor: [iconAnchorXBig, iconAnchorYBig]
 });
