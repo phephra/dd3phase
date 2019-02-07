@@ -1029,7 +1029,7 @@ function unveilStatements(switchIcona) {
     switch (switchIcona) {
         case "altamira":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Norte Energia invested in the construction and renovation of hospitals, which have already been delivered and equipped." ';
@@ -1039,7 +1039,7 @@ function unveilStatements(switchIcona) {
             break;
         case "altamira2":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte built a modern system of sewage collection and treatment, with more than 200 km of network, and expanded the water supply system." ';
@@ -1049,7 +1049,7 @@ function unveilStatements(switchIcona) {
             break;
         case "altamira3":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The construction of five new neighborhoods in Altamira was completed in 2015. In total, 3,700 houses were built." ';
@@ -1059,7 +1059,7 @@ function unveilStatements(switchIcona) {
             break;
         case "diga":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "60 million people are going to be reached." ';
@@ -1069,7 +1069,7 @@ function unveilStatements(switchIcona) {
             break;
         case "diga2":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "Belo Monte confers greater security to the Electric System, due to the better use of the hydrological differences of flood and drought between the different regions of Brazil, which contribute to the Brazilian energy matrix." ';
@@ -1079,7 +1079,7 @@ function unveilStatements(switchIcona) {
             break;
         case "ambiente":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "More than 395 thousand wild animals were rescued. Healthy animals (92%) were returned to the natural habitat, while the rest were sent to scientific institutions or breeding grounds for conservation purposes. " ';
@@ -1089,7 +1089,7 @@ function unveilStatements(switchIcona) {
             break;
         case "ambiente2":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The environmental conditions around Volta Grande are kept stable by a "hydrograph of consensus" - a model that establishes the minimum river flow rate to keep the area environmentally healthy." ';
@@ -1099,7 +1099,7 @@ function unveilStatements(switchIcona) {
             break;
         case "indios":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The evolution of the Belo Monte project ensured that no centimeter of the more than 5 million hectares occupied by 9 ethnic groups was flooded by the reservoirs of the Plant." ';
@@ -1109,7 +1109,7 @@ function unveilStatements(switchIcona) {
             break;
         case "indios2":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The indigenous communities actively participate in the discussions to define the actions that will be carried out in their territories. " ';
@@ -1119,7 +1119,7 @@ function unveilStatements(switchIcona) {
             break;
         case "indios3":
             console.log(switchIcona);
-            document.getElementsByClassName("actor-icon")[0].src = "assets/img/norte_icon.svg";
+            document.getElementsByClassName("actor-icon")[0].src = "./assets/img/norte_icon.svg";
             document.getElementsByClassName("actor-name")[0].innerHTML = "Norte Energia";
             document.getElementsByClassName("actor-type")[0].innerHTML = "The company running the dam";
             document.getElementsByClassName("statement-text")[0].innerHTML = ' "The Basic Indigenous Environmental Component Project has been guaranteeing fundamental rights, promoting the quality of life and integrity of some 4,000 indigenous people." ';
