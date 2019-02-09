@@ -273,8 +273,8 @@ var iconAnchorY = 30;
 var iconAnchorXBig = 40;
 var iconAnchorYBig = 40;
 
-var iconScale = 60;
-var iconScaleBig = 80;
+var iconScale = h/15;
+var iconScaleBig = h/12;
 
 var iconsPath = 'assets/Icons/';
 
